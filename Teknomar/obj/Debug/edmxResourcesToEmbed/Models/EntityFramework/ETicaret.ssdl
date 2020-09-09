@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="eTicaretModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Adminler">
+    <Key>
+      <PropertyRef Name="AdminID" />
+    </Key>
+    <Property Name="AdminID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KullaniciAdi" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Sifre" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Role" Type="nvarchar" MaxLength="2" />
+  </EntityType>
+  <EntityType Name="AdresTanimlari">
+    <Key>
+      <PropertyRef Name="AdresTanimiID" />
+    </Key>
+    <Property Name="AdresTanimiID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UyeID" Type="int" />
+    <Property Name="Ad" Type="nvarchar" MaxLength="50" />
+    <Property Name="Soyad" Type="nvarchar" MaxLength="50" />
+    <Property Name="SehirAdi" Type="nvarchar" MaxLength="50" />
+    <Property Name="IlceAdi" Type="nvarchar" MaxLength="50" />
+    <Property Name="Adres" Type="nvarchar" MaxLength="50" />
+    <Property Name="Tel" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="AnakartUrunler">
+    <Key>
+      <PropertyRef Name="AnakartUrunID" />
+    </Key>
+    <Property Name="AnakartUrunID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AnakartAdi" Type="nvarchar(max)" />
+    <Property Name="Marka" Type="nvarchar" MaxLength="50" />
+    <Property Name="Fiyat" Type="float" />
+    <Property Name="Stok" Type="int" />
+    <Property Name="Uyumluluk" Type="nvarchar" MaxLength="50" />
+    <Property Name="Yapi" Type="nvarchar" MaxLength="50" />
+    <Property Name="IslemciSoketTipi" Type="nvarchar" MaxLength="50" />
+    <Property Name="RamTipi" Type="nvarchar" MaxLength="50" />
+    <Property Name="MbChipseti" Type="nvarchar" MaxLength="50" />
+    <Property Name="MbRamSlotSayisi" Type="nvarchar" MaxLength="50" />
+    <Property Name="SpdifCikisi" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ps2" Type="nvarchar" MaxLength="50" />
+    <Property Name="Sekizkanal" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ethernet" Type="nvarchar" MaxLength="50" />
+    <Property Name="KablosuzWifi" Type="nvarchar" MaxLength="50" />
+    <Property Name="usb2" Type="nvarchar" MaxLength="50" />
+    <Property Name="usb3" Type="nvarchar" MaxLength="50" />
+    <Property Name="ClearCmosButon" Type="nvarchar" MaxLength="50" />
+    <Property Name="SupremeFX" Type="nvarchar" MaxLength="50" />
+    <Property Name="Bluetooth" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ses" Type="nvarchar" MaxLength="50" />
+    <Property Name="PciExpress" Type="nvarchar" MaxLength="50" />
+    <Property Name="Sata3" Type="nvarchar" MaxLength="50" />
+    <Property Name="SataExpress" Type="nvarchar" MaxLength="50" />
+    <Property Name="M2Sata" Type="nvarchar" MaxLength="50" />
+    <Property Name="CoreI7" Type="nvarchar" MaxLength="50" />
+    <Property Name="Mensei" Type="nvarchar" MaxLength="50" />
+    <Property Name="Garanti" Type="nvarchar" MaxLength="50" />
+    <Property Name="resim1" Type="nvarchar(max)" />
+    <Property Name="resim2" Type="nvarchar(max)" />
+    <Property Name="resim3" Type="nvarchar(max)" />
+    <Property Name="resim4" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="EkranKartiUrunler">
+    <Key>
+      <PropertyRef Name="EkranKartiUrunID" />
+    </Key>
+    <Property Name="EkranKartiUrunID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EkranKartiAdi" Type="nvarchar(max)" />
+    <Property Name="Marka" Type="nvarchar" MaxLength="50" />
+    <Property Name="Fiyat" Type="float" />
+    <Property Name="Stok" Type="int" />
+    <Property Name="CekirdekHizi" Type="nvarchar" MaxLength="50" />
+    <Property Name="RamKapasitesi" Type="nvarchar" MaxLength="50" />
+    <Property Name="BellekHizi" Type="nvarchar" MaxLength="50" />
+    <Property Name="GrafikChipsetiMarkasi" Type="nvarchar" MaxLength="50" />
+    <Property Name="EkranKartiChipseti" Type="nvarchar" MaxLength="50" />
+    <Property Name="BellekTipi" Type="nvarchar" MaxLength="50" />
+    <Property Name="BellekArayuzu" Type="nvarchar" MaxLength="50" />
+    <Property Name="PciExpress3" Type="nvarchar" MaxLength="50" />
+    <Property Name="DisplayPort" Type="nvarchar" MaxLength="50" />
+    <Property Name="HdcpDestegi" Type="nvarchar" MaxLength="50" />
+    <Property Name="Dvi" Type="nvarchar" MaxLength="50" />
+    <Property Name="Hdmi" Type="nvarchar" MaxLength="50" />
+    <Property Name="GucTuketimi" Type="nvarchar" MaxLength="50" />
+    <Property Name="Mensei" Type="nvarchar" MaxLength="50" />
+    <Property Name="Garanti" Type="nvarchar" MaxLength="50" />
+    <Property Name="Cozunurluk" Type="nvarchar" MaxLength="50" />
+    <Property Name="resim1" Type="nvarchar(max)" />
+    <Property Name="resim2" Type="nvarchar(max)" />
+    <Property Name="resim3" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Fatura">
+    <Key>
+      <PropertyRef Name="FaturaID" />
+    </Key>
+    <Property Name="FaturaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UyeID" Type="int" />
+    <Property Name="UyeAdi" Type="nvarchar" MaxLength="50" />
+    <Property Name="UyeSoyad" Type="nvarchar" MaxLength="50" />
+    <Property Name="UyeAdres" Type="nvarchar(max)" />
+    <Property Name="Tarih" Type="date" />
+    <Property Name="UrunAdlari" Type="nvarchar(max)" />
+    <Property Name="UrunFiyatlari" Type="nvarchar(max)" />
+    <Property Name="UrunAdetleri" Type="nvarchar(max)" />
+    <Property Name="ToplamFiyat" Type="float" />
+  </EntityType>
+  <EntityType Name="IslemciUrunler">
+    <Key>
+      <PropertyRef Name="IslemciUrunID" />
+    </Key>
+    <Property Name="IslemciUrunID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IslemciAdi" Type="nvarchar(max)" />
+    <Property Name="Marka" Type="nvarchar" MaxLength="50" />
+    <Property Name="Fiyat" Type="float" />
+    <Property Name="Stok" Type="int" />
+    <Property Name="IslemciSoketTipi" Type="nvarchar" MaxLength="50" />
+    <Property Name="IslemciNumarasi" Type="nvarchar" MaxLength="50" />
+    <Property Name="IslemciTeknolojisi" Type="nvarchar" MaxLength="50" />
+    <Property Name="IslemciHizi" Type="nvarchar" MaxLength="50" />
+    <Property Name="IslemciOnBellek" Type="nvarchar" MaxLength="50" />
+    <Property Name="Mensei" Type="nvarchar" MaxLength="50" />
+    <Property Name="Garanti" Type="nvarchar" MaxLength="50" />
+    <Property Name="KutuluKutusuz" Type="nvarchar" MaxLength="50" />
+    <Property Name="resim1" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Sepet">
+    <Key>
+      <PropertyRef Name="SepetID" />
+    </Key>
+    <Property Name="SepetID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UyeID" Type="int" />
+    <Property Name="UrunAdi" Type="nvarchar(max)" />
+    <Property Name="UrunResim" Type="nvarchar(max)" />
+    <Property Name="UrunAdet" Type="int" />
+    <Property Name="UrunFiyat" Type="float" />
+    <Property Name="ToplamFiyat" Type="float" />
+    <Property Name="UrunID" Type="int" />
+    <Property Name="TurID" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Siparisler">
+    <Key>
+      <PropertyRef Name="SiparisID" />
+    </Key>
+    <Property Name="SiparisID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UyeID" Type="int" />
+    <Property Name="TurID" Type="nvarchar" MaxLength="50" />
+    <Property Name="UrunID" Type="int" />
+    <Property Name="UrunResim" Type="nvarchar(max)" />
+    <Property Name="UrunAdi" Type="nvarchar(max)" />
+    <Property Name="UrunFiyat" Type="float" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Uyeler">
+    <Key>
+      <PropertyRef Name="UyeID" />
+    </Key>
+    <Property Name="UyeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Ad" Type="nvarchar" MaxLength="50" />
+    <Property Name="Soyad" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="Tel" Type="nvarchar" MaxLength="50" />
+    <Property Name="Sifre" Type="nvarchar" MaxLength="50" />
+    <Property Name="SifreTekrar" Type="nvarchar" MaxLength="50" />
+    <Property Name="DogumTarihi" Type="nvarchar" MaxLength="50" />
+    <Property Name="Cinsiyet" Type="nvarchar" MaxLength="50" />
+    <Property Name="GizliSoru" Type="nvarchar(max)" />
+    <Property Name="GizliSoruCevap" Type="nvarchar(max)" />
+    <Property Name="UyeFoto" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Yorumlar">
+    <Key>
+      <PropertyRef Name="YorumID" />
+    </Key>
+    <Property Name="YorumID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AdSoyad" Type="nvarchar" MaxLength="50" />
+    <Property Name="YorumBasligi" Type="nvarchar(max)" />
+    <Property Name="Yorum" Type="nvarchar(max)" />
+    <Property Name="UyeID" Type="int" />
+    <Property Name="UrunID" Type="int" />
+    <Property Name="TurID" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="eTicaretModelStoreContainer">
+    <EntitySet Name="Adminler" EntityType="Self.Adminler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AdresTanimlari" EntityType="Self.AdresTanimlari" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AnakartUrunler" EntityType="Self.AnakartUrunler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EkranKartiUrunler" EntityType="Self.EkranKartiUrunler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Fatura" EntityType="Self.Fatura" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="IslemciUrunler" EntityType="Self.IslemciUrunler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sepet" EntityType="Self.Sepet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Siparisler" EntityType="Self.Siparisler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Uyeler" EntityType="Self.Uyeler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Yorumlar" EntityType="Self.Yorumlar" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

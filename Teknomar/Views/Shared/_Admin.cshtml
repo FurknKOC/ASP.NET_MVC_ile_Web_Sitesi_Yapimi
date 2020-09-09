@@ -1,0 +1,84 @@
+﻿
+@{
+    Layout = null;
+}
+
+    <title>TEKNOMAR</title>
+    <link href="~/Content/css/main.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    
+
+<body>
+    <form>
+        <div id="adminpaneli">
+            <div id="adminpaneli2">
+                <div id="logo2">
+                    <a href="adminkullanici.aspx">
+                        <img src="~/images/LOGOo.fw.png" />
+                    </a>
+                </div>
+
+                <div id="panelheader">
+
+                    <nav class="dropdownmenu">
+                        <ul>
+                            <li>
+                                <a href="adminurunekle.aspx">Ürün Ekle</a>
+                                <ul id="submenu">
+                                    <li>@Html.ActionLink("Anakart Ekle","AnakartEkle","Admin")@*<a href="adminurunekle.aspx">Anakart</a>*@</li>
+                                    <li><a href="adminislemciekle.aspx">İşlemciler</a></li>
+                                    <li><a href="adminekrankartiekle.aspx">Ekran Kartları</a></li>
+                                    <li><a href="#">RAM</a></li>
+                                    <li><a href="#">TV Kartı</a></li>
+                                    <li><a href="#">Harici Disk</a></li>
+                                    <li><a href="#">SSD</a></li>
+                                    <li><a href="#">Sabit Disk</a></li>
+                                    <li><a href="#">Güç Kaynakları</a></li>
+                                    <li><a href="#">Kasa</a></li>
+                                    <li><a href="#">Monitör</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="adminurunguncelle.aspx">Ürün Güncelle / Sil</a>
+                                <ul id="submenu">
+                                    <li>@Html.ActionLink("Anakart Güncelle / Sil", "AnakartListele", "Admin")</li>
+                                    <li><a href="adminislemciguncelle.aspx">İşlemciler</a></li>
+                                    <li><a href="adminekrankartiguncelle.aspx">Ekran Kartları</a></li>
+                                    <li><a href="#">RAM</a></li>
+                                    <li><a href="#">TV Kartı</a></li>
+                                    <li><a href="#">Harici Disk</a></li>
+                                    <li><a href="#">SSD</a></li>
+                                    <li><a href="#">Sabit Disk</a></li>
+                                    <li><a href="#">Güç Kaynakları</a></li>
+                                    <li><a href="#">Kasa</a></li>
+                                    <li><a href="#">Monitör</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                @if (User.IsInRole("A"))
+                                {
+                                    @Html.ActionLink("Kullanıcılar", "Index", "Admins")
+                                }
+                            </li>
+                            <li>
+                                @Html.ActionLink("Çıkış Yap", "Logout", "Admin")
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="panelicerik">
+                   @RenderBody()
+                </div>
+                <div id="adminfooter">
+
+                    <div class="footercizgi"></div>
+
+                    <p class="footeryazi">Copyright © 2017 TEKNOMAR, Her hakkı saklıdır.</p>
+
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+

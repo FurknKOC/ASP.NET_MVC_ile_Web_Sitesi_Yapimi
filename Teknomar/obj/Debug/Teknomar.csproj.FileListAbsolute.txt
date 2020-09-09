@@ -1,0 +1,162 @@
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\ApplicationInsights.config
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\roslyn\csc.exe
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\roslyn\System.Collections.Immutable.dll
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\roslyn\vbc.exe
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\roslyn\VBCSCompiler.exe
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\roslyn\VBCSCompiler.exe.config
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\Teknomar.dll.config
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\Teknomar.dll
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\Teknomar.pdb
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\Microsoft.AI.Web.dll
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\Microsoft.AI.WindowsServer.dll
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\Microsoft.ApplicationInsights.dll
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\Microsoft.Web.Infrastructure.dll
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\System.Web.Helpers.dll
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\System.Web.Mvc.dll
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\System.Web.Razor.dll
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\System.Web.Webpages.Deployment.dll
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\System.Web.Webpages.dll
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\System.Web.Webpages.Razor.dll
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\Microsoft.AI.Web.xml
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\Microsoft.AI.WindowsServer.xml
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\Microsoft.ApplicationInsights.xml
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\System.Web.Razor.xml
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\System.Web.Webpages.xml
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\System.Web.Webpages.Deployment.xml
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\System.Web.Webpages.Razor.xml
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\System.Web.Helpers.xml
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\System.Web.Mvc.xml
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\obj\Debug\Teknomar.csprojResolveAssemblyReference.cache
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\obj\Debug\Teknomar.dll
+c:\users\furkan koç\documents\visual studio 2015\Projects\Teknomar\Teknomar\obj\Debug\Teknomar.pdb
+C:\Users\Furkan KOÇ\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\EntityFramework.dll
+C:\Users\Furkan KOÇ\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\EntityFramework.SqlServer.dll
+C:\Users\Furkan KOÇ\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\EntityFramework.xml
+C:\Users\Furkan KOÇ\documents\visual studio 2015\Projects\Teknomar\Teknomar\bin\EntityFramework.SqlServer.xml
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\ApplicationInsights.config
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\roslyn\csc.exe
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\roslyn\vbc.exe
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\roslyn\VBCSCompiler.exe
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\Teknomar.dll.config
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\Teknomar.dll
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\Teknomar.pdb
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\EntityFramework.dll
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\EntityFramework.SqlServer.dll
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\Microsoft.AI.Web.dll
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\System.Web.Helpers.dll
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\System.Web.Mvc.dll
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\System.Web.Razor.dll
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\System.Web.Webpages.dll
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\System.Web.Webpages.Razor.dll
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\EntityFramework.xml
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\EntityFramework.SqlServer.xml
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\Microsoft.AI.Web.xml
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\System.Web.Razor.xml
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\System.Web.Webpages.xml
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\System.Web.Webpages.Razor.xml
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\System.Web.Helpers.xml
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\System.Web.Mvc.xml
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\obj\Debug\Teknomar.csprojResolveAssemblyReference.cache
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\obj\Debug\Teknomar.dll
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\obj\Debug\Teknomar.pdb
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\obj\Debug\Teknomar.csproj.GenerateResource.Cache
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\bin\en\Teknomar.resources.dll
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\obj\Debug\Teknomar.Resource.resources
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\obj\Debug\Teknomar.Resource.en.resources
+C:\Users\Furkan KOÇ\Documents\Visual Studio 2015\Projects\Teknomar\test\Teknomar\obj\Debug\en\Teknomar.resources.dll
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\ApplicationInsights.config
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\roslyn\csc.exe
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\roslyn\System.Collections.Immutable.dll
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\roslyn\System.Reflection.Metadata.dll
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\roslyn\vbc.exe
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\roslyn\VBCSCompiler.exe
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\roslyn\VBCSCompiler.exe.config
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\Teknomar.dll.config
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\Teknomar.dll
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\Teknomar.pdb
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\en\Teknomar.resources.dll
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\EntityFramework.dll
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\EntityFramework.SqlServer.dll
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\Microsoft.AI.Agent.Intercept.dll
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\Microsoft.AI.DependencyCollector.dll
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\Microsoft.AI.Web.dll
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\Microsoft.AI.WindowsServer.dll
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\Microsoft.ApplicationInsights.dll
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\Microsoft.Web.Infrastructure.dll
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\System.Web.Helpers.dll
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\System.Web.Mvc.dll
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\System.Web.Razor.dll
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\System.Web.Webpages.Deployment.dll
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\System.Web.Webpages.dll
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\System.Web.Webpages.Razor.dll
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\EntityFramework.xml
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\EntityFramework.SqlServer.xml
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\Microsoft.AI.DependencyCollector.xml
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\Microsoft.AI.Web.xml
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\Microsoft.AI.WindowsServer.xml
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\Microsoft.ApplicationInsights.xml
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\System.Web.Razor.xml
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\System.Web.Webpages.xml
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\System.Web.Webpages.Deployment.xml
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\System.Web.Webpages.Razor.xml
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\System.Web.Helpers.xml
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\bin\System.Web.Mvc.xml
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\obj\Debug\Teknomar.csprojAssemblyReference.cache
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\obj\Debug\Teknomar.Resource.resources
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\obj\Debug\Teknomar.Resource.en.resources
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\obj\Debug\Teknomar.csproj.GenerateResource.cache
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\obj\Debug\Teknomar.csproj.CoreCompileInputs.cache
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\obj\Debug\en\Teknomar.resources.dll
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\obj\Debug\Teknomar.csproj.CopyComplete
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\obj\Debug\Teknomar.dll
+F:\Okul Dosyaları\ASP.Net Projeler\Teknomar\Teknomar\obj\Debug\Teknomar.pdb

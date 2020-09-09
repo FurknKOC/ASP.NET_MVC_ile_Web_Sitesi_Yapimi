@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Anakart" xml:space="preserve">
+    <value>Motherboard</value>
+  </data>
+  <data name="Anakartlar" xml:space="preserve">
+    <value>Motherboards</value>
+  </data>
+  <data name="Ara" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Bellek" xml:space="preserve">
+    <value>Memory(RAM)</value>
+  </data>
+  <data name="BellekOzellikleri" xml:space="preserve">
+    <value>Memory Features</value>
+  </data>
+  <data name="BellekTipi" xml:space="preserve">
+    <value>Memory Type</value>
+  </data>
+  <data name="DahaCokOzellik" xml:space="preserve">
+    <value>More Features</value>
+  </data>
+  <data name="EkranKarti" xml:space="preserve">
+    <value>Display Card</value>
+  </data>
+  <data name="Garanti" xml:space="preserve">
+    <value>Warranty</value>
+  </data>
+  <data name="GenelOzellikler" xml:space="preserve">
+    <value>General Features</value>
+  </data>
+  <data name="GizlilikPolitikamiz" xml:space="preserve">
+    <value>privacy policy</value>
+  </data>
+  <data name="GucKaynagi" xml:space="preserve">
+    <value>Power Supply</value>
+  </data>
+  <data name="GunIcindeIade" xml:space="preserve">
+    <value>Return Within 15 Days</value>
+  </data>
+  <data name="GunIcindeIade2" xml:space="preserve">
+    <value>You Can Return or Replace The Products You Have Purchased From TEKNOMAR Within 15 Days.</value>
+  </data>
+  <data name="Hakkimizda" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="HariciDisk" xml:space="preserve">
+    <value>External Disk</value>
+  </data>
+  <data name="Iletisim" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="InsanKaynaklari" xml:space="preserve">
+    <value>human Resources</value>
+  </data>
+  <data name="Islemci" xml:space="preserve">
+    <value>Processor</value>
+  </data>
+  <data name="IslemciOzellikleri" xml:space="preserve">
+    <value>Processor Features</value>
+  </data>
+  <data name="IslemciSoketTipi" xml:space="preserve">
+    <value>Processor Socket Type</value>
+  </data>
+  <data name="IslemRehberi" xml:space="preserve">
+    <value>transaction guide</value>
+  </data>
+  <data name="KapidaNakitOdeme" xml:space="preserve">
+    <value>Cash At The Door</value>
+  </data>
+  <data name="KapidaNakitOdeme2" xml:space="preserve">
+    <value>Shopping Online Is Very Easy With TEKNOMAR.</value>
+  </data>
+  <data name="KargoBedava" xml:space="preserve">
+    <value>Free Cargo</value>
+  </data>
+  <data name="KargoBedava2" xml:space="preserve">
+    <value>SHIPPING FREE from TEKNOMAR</value>
+  </data>
+  <data name="Kasa" xml:space="preserve">
+    <value>Case</value>
+  </data>
+  <data name="Kategoriler" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="KeyifliGaranti" xml:space="preserve">
+    <value>Delightful Warranty</value>
+  </data>
+  <data name="Kurumsal" xml:space="preserve">
+    <value>Corporate</value>
+  </data>
+  <data name="MarkaHaritasi" xml:space="preserve">
+    <value>Brand Map</value>
+  </data>
+  <data name="MBBellekSlotSayisi" xml:space="preserve">
+    <value>MB Memory Number of Slots</value>
+  </data>
+  <data name="MBCipSeti" xml:space="preserve">
+    <value>MB Chip Set</value>
+  </data>
+  <data name="Mensei" xml:space="preserve">
+    <value>Origin</value>
+  </data>
+  <data name="Monitor" xml:space="preserve">
+    <value>Monitor</value>
+  </data>
+  <data name="MusteriHizmetleri" xml:space="preserve">
+    <value>Customer Service</value>
+  </data>
+  <data name="OdemeSecenekleri" xml:space="preserve">
+    <value>Payment Options</value>
+  </data>
+  <data name="SabitDisk" xml:space="preserve">
+    <value>Hard Drive</value>
+  </data>
+  <data name="SepeteEkle" xml:space="preserve">
+    <value>ADD TO CARD</value>
+  </data>
+  <data name="Sepetim" xml:space="preserve">
+    <value>My Cart</value>
+  </data>
+  <data name="ServisTakipFormu" xml:space="preserve">
+    <value>Service Tracking Form</value>
+  </data>
+  <data name="SesKarti" xml:space="preserve">
+    <value>Sound Card</value>
+  </data>
+  <data name="SiparisAsamalari" xml:space="preserve">
+    <value>Ordering stages</value>
+  </data>
+  <data name="SiteHaritasi" xml:space="preserve">
+    <value>Sitemap</value>
+  </data>
+  <data name="Ssd" xml:space="preserve">
+    <value>SSD</value>
+  </data>
+  <data name="sss" xml:space="preserve">
+    <value>S.S.S</value>
+  </data>
+  <data name="Stok" xml:space="preserve">
+    <value>Stock</value>
+  </data>
+  <data name="TeknikOzellikler" xml:space="preserve">
+    <value>Technicial Specifications</value>
+  </data>
+  <data name="Turkiyenin" xml:space="preserve">
+    <value>Turkey's Hyper Technology &amp; Computer Store</value>
+  </data>
+  <data name="TvKarti" xml:space="preserve">
+    <value>TV Card</value>
+  </data>
+  <data name="UrunOzellikleri" xml:space="preserve">
+    <value>Product Features</value>
+  </data>
+  <data name="UrunuGor" xml:space="preserve">
+    <value>View Product</value>
+  </data>
+  <data name="Uyelik" xml:space="preserve">
+    <value>Membership</value>
+  </data>
+  <data name="Uyumluluk" xml:space="preserve">
+    <value>Compatibility</value>
+  </data>
+  <data name="Yapi" xml:space="preserve">
+    <value>Structure</value>
+  </data>
+  <data name="YorumBasligiGiriniz" xml:space="preserve">
+    <value>Enter A Comment Title</value>
+  </data>
+  <data name="YorumGiriniz" xml:space="preserve">
+    <value>Enter A Comment</value>
+  </data>
+  <data name="Yorumlar" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="YorumYap" xml:space="preserve">
+    <value>COMMENT</value>
+  </data>
+  <data name="Adiniz" xml:space="preserve">
+    <value>Your Name</value>
+  </data>
+  <data name="Bilgilendirme" xml:space="preserve">
+    <value>You can subscribe to TEKNOMAR by filling in the fields below so that we can get to know you better and create a special campaign for you.</value>
+  </data>
+  <data name="Cinsiyet" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="EmailAdresiniz" xml:space="preserve">
+    <value>Your Email Adress</value>
+  </data>
+  <data name="Erkek" xml:space="preserve">
+    <value>Man</value>
+  </data>
+  <data name="GirisYap" xml:space="preserve">
+    <value>SIGN IN</value>
+  </data>
+  <data name="GizliSoru" xml:space="preserve">
+    <value>Secret Question</value>
+  </data>
+  <data name="GizliSoruCevap" xml:space="preserve">
+    <value>Enter the answer to the secret question</value>
+  </data>
+  <data name="IlkAraba" xml:space="preserve">
+    <value>What is the brand of your first car?</value>
+  </data>
+  <data name="IlkOkul" xml:space="preserve">
+    <value>What is the name of your first school?</value>
+  </data>
+  <data name="Kadin" xml:space="preserve">
+    <value>Woman</value>
+  </data>
+  <data name="Sifre" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Sifreniz" xml:space="preserve">
+    <value>Your Password</value>
+  </data>
+  <data name="SifreTekrar" xml:space="preserve">
+    <value>Password Again</value>
+  </data>
+  <data name="Soyadiniz" xml:space="preserve">
+    <value>Your Surname</value>
+  </data>
+  <data name="TelefonNumaraniz" xml:space="preserve">
+    <value>Your Phone Number</value>
+  </data>
+  <data name="UyeGirisi" xml:space="preserve">
+    <value>Member Login</value>
+  </data>
+  <data name="UyeOl" xml:space="preserve">
+    <value>SIGN UP</value>
+  </data>
+  <data name="YeniUyelik" xml:space="preserve">
+    <value>New Account</value>
+  </data>
+  <data name="CikisYap" xml:space="preserve">
+    <value>Log Out</value>
+  </data>
+  <data name="Hosgeldiniz" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+</root>

@@ -1,0 +1,58 @@
+﻿@model Teknomar.Models.EntityFramework.Adminler
+@{
+    ViewBag.Title = "Login";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="~/Content/css/main.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+        </div>
+        <div id="adminpaneli">
+            <div id="adminpaneli2">
+
+                <div class="adminicerik">
+
+                    <table class="admintablo">
+                        <tr>
+                            <td>
+                                <div id="logo2">
+                                    <a href="default.aspx">
+                                        <img src="~/images/LOGOo.fw.png" />
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        @using (Html.BeginForm("Login", "Admin", FormMethod.Post))
+                        {
+                        <tr class="textoge2">
+                            <td>@Html.TextBoxFor(m => m.KullaniciAdi, new { @class = "form-control", placeholder = "Kullanıcı Adı" })</td>
+                        </tr>
+                        <tr class="textoge2">
+                            <td>@Html.PasswordFor(m => m.Sifre, new { @class = "form-control", placeholder = "Şifre" })</td>
+                        </tr>
+                        <tr>
+                            <td><button type="submit" class="gbuton">GİRİŞ YAP</button></td>
+                        </tr>
+                        }
+                        <tr>
+                            <td>@ViewBag.Mesaj</td>
+
+                        </tr>
+                      
+                    </table>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+

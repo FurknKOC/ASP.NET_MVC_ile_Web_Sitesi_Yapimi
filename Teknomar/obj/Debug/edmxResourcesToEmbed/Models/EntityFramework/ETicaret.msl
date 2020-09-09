@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="eTicaretModelStoreContainer" CdmEntityContainer="eTicaretEntities">
+    <EntitySetMapping Name="AdresTanimlari">
+      <EntityTypeMapping TypeName="eTicaretModel.AdresTanimlari">
+        <MappingFragment StoreEntitySet="AdresTanimlari">
+          <ScalarProperty Name="AdresTanimiID" ColumnName="AdresTanimiID" />
+          <ScalarProperty Name="UyeID" ColumnName="UyeID" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+          <ScalarProperty Name="SehirAdi" ColumnName="SehirAdi" />
+          <ScalarProperty Name="IlceAdi" ColumnName="IlceAdi" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Tel" ColumnName="Tel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AnakartUrunler">
+      <EntityTypeMapping TypeName="eTicaretModel.AnakartUrunler">
+        <MappingFragment StoreEntitySet="AnakartUrunler">
+          <ScalarProperty Name="AnakartUrunID" ColumnName="AnakartUrunID" />
+          <ScalarProperty Name="AnakartAdi" ColumnName="AnakartAdi" />
+          <ScalarProperty Name="Marka" ColumnName="Marka" />
+          <ScalarProperty Name="Fiyat" ColumnName="Fiyat" />
+          <ScalarProperty Name="Stok" ColumnName="Stok" />
+          <ScalarProperty Name="Uyumluluk" ColumnName="Uyumluluk" />
+          <ScalarProperty Name="Yapi" ColumnName="Yapi" />
+          <ScalarProperty Name="IslemciSoketTipi" ColumnName="IslemciSoketTipi" />
+          <ScalarProperty Name="RamTipi" ColumnName="RamTipi" />
+          <ScalarProperty Name="MbChipseti" ColumnName="MbChipseti" />
+          <ScalarProperty Name="MbRamSlotSayisi" ColumnName="MbRamSlotSayisi" />
+          <ScalarProperty Name="SpdifCikisi" ColumnName="SpdifCikisi" />
+          <ScalarProperty Name="Ps2" ColumnName="Ps2" />
+          <ScalarProperty Name="Sekizkanal" ColumnName="Sekizkanal" />
+          <ScalarProperty Name="Ethernet" ColumnName="Ethernet" />
+          <ScalarProperty Name="KablosuzWifi" ColumnName="KablosuzWifi" />
+          <ScalarProperty Name="usb2" ColumnName="usb2" />
+          <ScalarProperty Name="usb3" ColumnName="usb3" />
+          <ScalarProperty Name="ClearCmosButon" ColumnName="ClearCmosButon" />
+          <ScalarProperty Name="SupremeFX" ColumnName="SupremeFX" />
+          <ScalarProperty Name="Bluetooth" ColumnName="Bluetooth" />
+          <ScalarProperty Name="Ses" ColumnName="Ses" />
+          <ScalarProperty Name="PciExpress" ColumnName="PciExpress" />
+          <ScalarProperty Name="Sata3" ColumnName="Sata3" />
+          <ScalarProperty Name="SataExpress" ColumnName="SataExpress" />
+          <ScalarProperty Name="M2Sata" ColumnName="M2Sata" />
+          <ScalarProperty Name="CoreI7" ColumnName="CoreI7" />
+          <ScalarProperty Name="Mensei" ColumnName="Mensei" />
+          <ScalarProperty Name="Garanti" ColumnName="Garanti" />
+          <ScalarProperty Name="resim1" ColumnName="resim1" />
+          <ScalarProperty Name="resim2" ColumnName="resim2" />
+          <ScalarProperty Name="resim3" ColumnName="resim3" />
+          <ScalarProperty Name="resim4" ColumnName="resim4" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EkranKartiUrunler">
+      <EntityTypeMapping TypeName="eTicaretModel.EkranKartiUrunler">
+        <MappingFragment StoreEntitySet="EkranKartiUrunler">
+          <ScalarProperty Name="EkranKartiUrunID" ColumnName="EkranKartiUrunID" />
+          <ScalarProperty Name="EkranKartiAdi" ColumnName="EkranKartiAdi" />
+          <ScalarProperty Name="Marka" ColumnName="Marka" />
+          <ScalarProperty Name="Fiyat" ColumnName="Fiyat" />
+          <ScalarProperty Name="Stok" ColumnName="Stok" />
+          <ScalarProperty Name="CekirdekHizi" ColumnName="CekirdekHizi" />
+          <ScalarProperty Name="RamKapasitesi" ColumnName="RamKapasitesi" />
+          <ScalarProperty Name="BellekHizi" ColumnName="BellekHizi" />
+          <ScalarProperty Name="GrafikChipsetiMarkasi" ColumnName="GrafikChipsetiMarkasi" />
+          <ScalarProperty Name="EkranKartiChipseti" ColumnName="EkranKartiChipseti" />
+          <ScalarProperty Name="BellekTipi" ColumnName="BellekTipi" />
+          <ScalarProperty Name="BellekArayuzu" ColumnName="BellekArayuzu" />
+          <ScalarProperty Name="PciExpress3" ColumnName="PciExpress3" />
+          <ScalarProperty Name="DisplayPort" ColumnName="DisplayPort" />
+          <ScalarProperty Name="HdcpDestegi" ColumnName="HdcpDestegi" />
+          <ScalarProperty Name="Dvi" ColumnName="Dvi" />
+          <ScalarProperty Name="Hdmi" ColumnName="Hdmi" />
+          <ScalarProperty Name="GucTuketimi" ColumnName="GucTuketimi" />
+          <ScalarProperty Name="Mensei" ColumnName="Mensei" />
+          <ScalarProperty Name="Garanti" ColumnName="Garanti" />
+          <ScalarProperty Name="Cozunurluk" ColumnName="Cozunurluk" />
+          <ScalarProperty Name="resim1" ColumnName="resim1" />
+          <ScalarProperty Name="resim2" ColumnName="resim2" />
+          <ScalarProperty Name="resim3" ColumnName="resim3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Fatura">
+      <EntityTypeMapping TypeName="eTicaretModel.Fatura">
+        <MappingFragment StoreEntitySet="Fatura">
+          <ScalarProperty Name="FaturaID" ColumnName="FaturaID" />
+          <ScalarProperty Name="UyeID" ColumnName="UyeID" />
+          <ScalarProperty Name="UyeAdi" ColumnName="UyeAdi" />
+          <ScalarProperty Name="UyeSoyad" ColumnName="UyeSoyad" />
+          <ScalarProperty Name="UyeAdres" ColumnName="UyeAdres" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="UrunAdlari" ColumnName="UrunAdlari" />
+          <ScalarProperty Name="UrunFiyatlari" ColumnName="UrunFiyatlari" />
+          <ScalarProperty Name="UrunAdetleri" ColumnName="UrunAdetleri" />
+          <ScalarProperty Name="ToplamFiyat" ColumnName="ToplamFiyat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IslemciUrunler">
+      <EntityTypeMapping TypeName="eTicaretModel.IslemciUrunler">
+        <MappingFragment StoreEntitySet="IslemciUrunler">
+          <ScalarProperty Name="IslemciUrunID" ColumnName="IslemciUrunID" />
+          <ScalarProperty Name="IslemciAdi" ColumnName="IslemciAdi" />
+          <ScalarProperty Name="Marka" ColumnName="Marka" />
+          <ScalarProperty Name="Fiyat" ColumnName="Fiyat" />
+          <ScalarProperty Name="Stok" ColumnName="Stok" />
+          <ScalarProperty Name="IslemciSoketTipi" ColumnName="IslemciSoketTipi" />
+          <ScalarProperty Name="IslemciNumarasi" ColumnName="IslemciNumarasi" />
+          <ScalarProperty Name="IslemciTeknolojisi" ColumnName="IslemciTeknolojisi" />
+          <ScalarProperty Name="IslemciHizi" ColumnName="IslemciHizi" />
+          <ScalarProperty Name="IslemciOnBellek" ColumnName="IslemciOnBellek" />
+          <ScalarProperty Name="Mensei" ColumnName="Mensei" />
+          <ScalarProperty Name="Garanti" ColumnName="Garanti" />
+          <ScalarProperty Name="KutuluKutusuz" ColumnName="KutuluKutusuz" />
+          <ScalarProperty Name="resim1" ColumnName="resim1" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sepet">
+      <EntityTypeMapping TypeName="eTicaretModel.Sepet">
+        <MappingFragment StoreEntitySet="Sepet">
+          <ScalarProperty Name="SepetID" ColumnName="SepetID" />
+          <ScalarProperty Name="UyeID" ColumnName="UyeID" />
+          <ScalarProperty Name="UrunAdi" ColumnName="UrunAdi" />
+          <ScalarProperty Name="UrunResim" ColumnName="UrunResim" />
+          <ScalarProperty Name="UrunAdet" ColumnName="UrunAdet" />
+          <ScalarProperty Name="UrunFiyat" ColumnName="UrunFiyat" />
+          <ScalarProperty Name="ToplamFiyat" ColumnName="ToplamFiyat" />
+          <ScalarProperty Name="UrunID" ColumnName="UrunID" />
+          <ScalarProperty Name="TurID" ColumnName="TurID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Siparisler">
+      <EntityTypeMapping TypeName="eTicaretModel.Siparisler">
+        <MappingFragment StoreEntitySet="Siparisler">
+          <ScalarProperty Name="SiparisID" ColumnName="SiparisID" />
+          <ScalarProperty Name="UyeID" ColumnName="UyeID" />
+          <ScalarProperty Name="TurID" ColumnName="TurID" />
+          <ScalarProperty Name="UrunID" ColumnName="UrunID" />
+          <ScalarProperty Name="UrunResim" ColumnName="UrunResim" />
+          <ScalarProperty Name="UrunAdi" ColumnName="UrunAdi" />
+          <ScalarProperty Name="UrunFiyat" ColumnName="UrunFiyat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="eTicaretModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Uyeler">
+      <EntityTypeMapping TypeName="eTicaretModel.Uyeler">
+        <MappingFragment StoreEntitySet="Uyeler">
+          <ScalarProperty Name="UyeID" ColumnName="UyeID" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Tel" ColumnName="Tel" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+          <ScalarProperty Name="SifreTekrar" ColumnName="SifreTekrar" />
+          <ScalarProperty Name="DogumTarihi" ColumnName="DogumTarihi" />
+          <ScalarProperty Name="Cinsiyet" ColumnName="Cinsiyet" />
+          <ScalarProperty Name="GizliSoru" ColumnName="GizliSoru" />
+          <ScalarProperty Name="GizliSoruCevap" ColumnName="GizliSoruCevap" />
+          <ScalarProperty Name="UyeFoto" ColumnName="UyeFoto" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Yorumlar">
+      <EntityTypeMapping TypeName="eTicaretModel.Yorumlar">
+        <MappingFragment StoreEntitySet="Yorumlar">
+          <ScalarProperty Name="YorumID" ColumnName="YorumID" />
+          <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+          <ScalarProperty Name="YorumBasligi" ColumnName="YorumBasligi" />
+          <ScalarProperty Name="Yorum" ColumnName="Yorum" />
+          <ScalarProperty Name="UyeID" ColumnName="UyeID" />
+          <ScalarProperty Name="UrunID" ColumnName="UrunID" />
+          <ScalarProperty Name="TurID" ColumnName="TurID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Adminler">
+      <EntityTypeMapping TypeName="eTicaretModel.Adminler">
+        <MappingFragment StoreEntitySet="Adminler">
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+          <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+          <ScalarProperty Name="AdminID" ColumnName="AdminID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

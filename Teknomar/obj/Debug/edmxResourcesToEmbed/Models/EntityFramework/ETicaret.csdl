@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="eTicaretModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AdresTanimlari">
+    <Key>
+      <PropertyRef Name="AdresTanimiID" />
+    </Key>
+    <Property Name="AdresTanimiID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UyeID" Type="Int32" />
+    <Property Name="Ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SehirAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IlceAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Adres" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Tel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="AnakartUrunler">
+    <Key>
+      <PropertyRef Name="AnakartUrunID" />
+    </Key>
+    <Property Name="AnakartUrunID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AnakartAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Marka" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Fiyat" Type="Double" />
+    <Property Name="Stok" Type="Int32" />
+    <Property Name="Uyumluluk" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Yapi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IslemciSoketTipi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RamTipi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MbChipseti" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MbRamSlotSayisi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SpdifCikisi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ps2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Sekizkanal" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ethernet" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="KablosuzWifi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="usb2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="usb3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ClearCmosButon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SupremeFX" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Bluetooth" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Ses" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PciExpress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Sata3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SataExpress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="M2Sata" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CoreI7" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Mensei" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Garanti" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="resim1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="resim2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="resim3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="resim4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="EkranKartiUrunler">
+    <Key>
+      <PropertyRef Name="EkranKartiUrunID" />
+    </Key>
+    <Property Name="EkranKartiUrunID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EkranKartiAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Marka" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Fiyat" Type="Double" />
+    <Property Name="Stok" Type="Int32" />
+    <Property Name="CekirdekHizi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RamKapasitesi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BellekHizi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GrafikChipsetiMarkasi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EkranKartiChipseti" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BellekTipi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BellekArayuzu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PciExpress3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DisplayPort" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="HdcpDestegi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Dvi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Hdmi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GucTuketimi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Mensei" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Garanti" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Cozunurluk" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="resim1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="resim2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="resim3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Fatura">
+    <Key>
+      <PropertyRef Name="FaturaID" />
+    </Key>
+    <Property Name="FaturaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UyeID" Type="Int32" />
+    <Property Name="UyeAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UyeSoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UyeAdres" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Tarih" Type="DateTime" Precision="0" />
+    <Property Name="UrunAdlari" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="UrunFiyatlari" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="UrunAdetleri" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ToplamFiyat" Type="Double" />
+  </EntityType>
+  <EntityType Name="IslemciUrunler">
+    <Key>
+      <PropertyRef Name="IslemciUrunID" />
+    </Key>
+    <Property Name="IslemciUrunID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IslemciAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Marka" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Fiyat" Type="Double" />
+    <Property Name="Stok" Type="Int32" />
+    <Property Name="IslemciSoketTipi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IslemciNumarasi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IslemciTeknolojisi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IslemciHizi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IslemciOnBellek" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Mensei" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Garanti" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="KutuluKutusuz" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="resim1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Sepet">
+    <Key>
+      <PropertyRef Name="SepetID" />
+    </Key>
+    <Property Name="SepetID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UyeID" Type="Int32" />
+    <Property Name="UrunAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="UrunResim" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="UrunAdet" Type="Int32" />
+    <Property Name="UrunFiyat" Type="Double" />
+    <Property Name="ToplamFiyat" Type="Double" />
+    <Property Name="UrunID" Type="Int32" />
+    <Property Name="TurID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Siparisler">
+    <Key>
+      <PropertyRef Name="SiparisID" />
+    </Key>
+    <Property Name="SiparisID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UyeID" Type="Int32" />
+    <Property Name="TurID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UrunID" Type="Int32" />
+    <Property Name="UrunResim" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="UrunAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="UrunFiyat" Type="Double" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Uyeler">
+    <Key>
+      <PropertyRef Name="UyeID" />
+    </Key>
+    <Property Name="UyeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Tel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SifreTekrar" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DogumTarihi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Cinsiyet" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GizliSoru" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="GizliSoruCevap" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="UyeFoto" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Yorumlar">
+    <Key>
+      <PropertyRef Name="YorumID" />
+    </Key>
+    <Property Name="YorumID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AdSoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="YorumBasligi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Yorum" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="UyeID" Type="Int32" />
+    <Property Name="UrunID" Type="Int32" />
+    <Property Name="TurID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="eTicaretEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AdresTanimlari" EntityType="Self.AdresTanimlari" />
+    <EntitySet Name="AnakartUrunler" EntityType="Self.AnakartUrunler" />
+    <EntitySet Name="EkranKartiUrunler" EntityType="Self.EkranKartiUrunler" />
+    <EntitySet Name="Fatura" EntityType="Self.Fatura" />
+    <EntitySet Name="IslemciUrunler" EntityType="Self.IslemciUrunler" />
+    <EntitySet Name="Sepet" EntityType="Self.Sepet" />
+    <EntitySet Name="Siparisler" EntityType="Self.Siparisler" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="Uyeler" EntityType="Self.Uyeler" />
+    <EntitySet Name="Yorumlar" EntityType="Self.Yorumlar" />
+    <EntitySet Name="Adminler" EntityType="eTicaretModel.Adminler" />
+  </EntityContainer>
+  <EntityType Name="Adminler">
+    <Key>
+      <PropertyRef Name="AdminID" />
+    </Key>
+    <Property Name="AdminID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KullaniciAdi" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Sifre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Role" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

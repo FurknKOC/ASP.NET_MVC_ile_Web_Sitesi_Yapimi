@@ -1,0 +1,160 @@
+﻿@model Teknomar.Models.EntityFramework.AnakartUrunler
+
+@{
+    ViewBag.Title = "AnakartGuncelle";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+@{
+    List<SelectListItem> AnakartMarka = new List<SelectListItem>();
+    AnakartMarka.Add(new SelectListItem { Text = "Gigabyte", Value = "Gigabyte" });
+    AnakartMarka.Add(new SelectListItem { Text = "MSI", Value = "MSI", });
+    AnakartMarka.Add(new SelectListItem { Text = "Asus", Value = "Asus" });
+
+    List<SelectListItem> AnakartUyumluluk = new List<SelectListItem>();
+    AnakartUyumluluk.Add(new SelectListItem { Text = "Intel", Value = "Intel" });
+    AnakartUyumluluk.Add(new SelectListItem { Text = "AMD", Value = "AMD", });
+
+    List<SelectListItem> AnakartYapi = new List<SelectListItem>();
+    AnakartYapi.Add(new SelectListItem { Text = "ATX", Value = "ATX" });
+    AnakartYapi.Add(new SelectListItem { Text = "Micro ATX", Value = "Micro ATX", });
+
+    List<SelectListItem> AnakartIslemciSoketTipi = new List<SelectListItem>();
+    AnakartIslemciSoketTipi.Add(new SelectListItem { Text = "Soket AM4", Value = "Soket AM4" });
+    AnakartIslemciSoketTipi.Add(new SelectListItem { Text = "Soket 1151", Value = "Soket 1151", });
+
+    List<SelectListItem> AnakartRamTipi = new List<SelectListItem>();
+    AnakartRamTipi.Add(new SelectListItem { Text = "DDR3", Value = "DDR3" });
+    AnakartRamTipi.Add(new SelectListItem { Text = "DDR4", Value = "DDR4", });
+
+    List<SelectListItem> AnakartChipSeti = new List<SelectListItem>();
+    AnakartChipSeti.Add(new SelectListItem { Text = "AMD® X370", Value = "AMD® X370" });
+    AnakartChipSeti.Add(new SelectListItem { Text = "AMD® B350", Value = "AMD® B350", });
+    AnakartChipSeti.Add(new SelectListItem { Text = "Intel® B250", Value = "Intel® B250" });
+    AnakartChipSeti.Add(new SelectListItem { Text = "Intel® Z270", Value = "Intel® Z270", });
+
+    List<SelectListItem> AnakartRamSlotSayisi = new List<SelectListItem>();
+    AnakartRamSlotSayisi.Add(new SelectListItem { Text = "2", Value = "2" });
+    AnakartRamSlotSayisi.Add(new SelectListItem { Text = "4", Value = "4", });
+}
+
+
+
+
+
+
+
+<h4>ANAKART</h4>
+<table class="paneliceriktablo">
+    @using (Html.BeginForm("AnakartGuncelle", "Admin", FormMethod.Post))
+    {
+
+        <tr class="textoge">
+            <td>Anakart Adı </td>
+            <td>@Html.TextBoxFor(m => m.AnakartAdi, new { @class = "form-control" })</td>
+        </tr>
+
+            <tr class="selectoge">
+                <td>Marka</td>
+                <td>
+                    @Html.DropDownListFor(m => m.Marka, AnakartMarka, "Marka Seçiniz", new { @class = "form-control" })
+                </td>
+            </tr>
+
+            <tr class="textoge">
+                <td>Fiyat</td>
+                <td>@Html.TextBoxFor(m => m.Fiyat, new { @class = "form-control" })</td>
+            </tr>
+
+            <tr class="textoge">
+                <td>Stok</td>
+                <td>@Html.TextBoxFor(m => m.Stok, new { @class = "form-control" })</td>
+            </tr>
+
+            <tr class="selectoge">
+                <td>Uyumluluk</td>
+                <td>
+                    @Html.DropDownListFor(m => m.Uyumluluk, AnakartUyumluluk, "Uyumluluk Türü Seçiniz", new { @class = "form-control" })
+                </td>
+            </tr>
+
+            <tr class="selectoge">
+                <td>Yapı</td>
+                <td>
+                    @Html.DropDownListFor(m => m.Yapi, AnakartYapi, "Yapı Türü Seçiniz", new { @class = "form-control" })
+                </td>
+            </tr>
+
+            <tr class="selectoge">
+                <td>İşlemci Soket Tipi</td>
+                <td>
+                    @Html.DropDownListFor(m => m.IslemciSoketTipi, AnakartIslemciSoketTipi, "İşlemci Soket Tipi Seçiniz", new { @class = "form-control" })
+                </td>
+            </tr>
+
+            <tr class="selectoge">
+                <td>RAM Tipi</td>
+                <td>
+                    @Html.DropDownListFor(m => m.RamTipi, AnakartRamTipi, "Ram Tipi Seçiniz", new { @class = "form-control" })
+                </td>
+            </tr>
+
+            <tr class="selectoge">
+                <td>Anakart Chip Seti</td>
+                <td>
+                    @Html.DropDownListFor(m => m.MbChipseti, AnakartChipSeti, "Anakart Chip Seti Seçiniz", new { @class = "form-control" })
+                </td>
+            </tr>
+
+            <tr class="selectoge">
+                <td>MB RAM Slot Sayısı</td>
+                <td>
+                    @Html.DropDownListFor(m => m.MbRamSlotSayisi, AnakartRamSlotSayisi, "Ram Slot Sayısı Seçiniz", new { @class = "form-control" })
+                </td>
+            </tr>
+
+            <tr class="textoge">
+                <td>Menşei</td>
+                <td>@Html.TextBoxFor(m => m.Mensei, new { @class = "form-control" })</td>
+            </tr>
+
+            <tr class="textoge">
+                <td>Garanti</td>
+                <td>@Html.TextBoxFor(m => m.Garanti, new { @class = "form-control" })</td>
+            </tr>
+
+            @*<tr>
+                <td>Ürün Fotoğrafı-1</td>
+                <td>
+                    <asp:FileUpload ID="fileresim1" runat="server" />
+                <input type="file" name="resim1" />
+            </td>
+        </tr>
+
+            <tr>
+                    <td>Ürün Fotoğrafı-2</td>
+                    <td><asp:FileUpload ID="fileresim2" runat="server" /></td>
+                </tr>
+
+                <tr>
+                    <td>Ürün Fotoğrafı-3</td>
+                    <td><asp:FileUpload ID="fileresim3" runat="server" /></td>
+                </tr>
+
+                <tr>
+                    <td>Ürün Fotoğrafı-4</td>
+                    <td><asp:FileUpload ID="fileresim4" runat="server" /></td>
+                </tr>*@
+
+            <tr>
+                <td></td>
+                @Html.HiddenFor(m=>m.AnakartUrunID)
+                <td><input type="submit" value="KAYDET" class="kayitbuton" />@*<button type="submit" class="kayitbuton">ANAKART EKLE</button>*@@*<asp:Button ID="Button2" runat="server" CssClass="kayitbuton" OnClick="Button2_Click" Text="ANAKART EKLE" />*@</td>
+            </tr>
+
+            
+
+    }
+</table>
+
+

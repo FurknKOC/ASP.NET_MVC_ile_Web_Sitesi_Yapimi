@@ -1,0 +1,642 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="eTicaretModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Adminler">
+          <Key>
+            <PropertyRef Name="AdminID" />
+          </Key>
+          <Property Name="AdminID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="KullaniciAdi" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Sifre" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Role" Type="nvarchar" MaxLength="2" />
+        </EntityType>
+        <EntityType Name="AdresTanimlari">
+          <Key>
+            <PropertyRef Name="AdresTanimiID" />
+          </Key>
+          <Property Name="AdresTanimiID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UyeID" Type="int" />
+          <Property Name="Ad" Type="nvarchar" MaxLength="50" />
+          <Property Name="Soyad" Type="nvarchar" MaxLength="50" />
+          <Property Name="SehirAdi" Type="nvarchar" MaxLength="50" />
+          <Property Name="IlceAdi" Type="nvarchar" MaxLength="50" />
+          <Property Name="Adres" Type="nvarchar" MaxLength="50" />
+          <Property Name="Tel" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="AnakartUrunler">
+          <Key>
+            <PropertyRef Name="AnakartUrunID" />
+          </Key>
+          <Property Name="AnakartUrunID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AnakartAdi" Type="nvarchar(max)" />
+          <Property Name="Marka" Type="nvarchar" MaxLength="50" />
+          <Property Name="Fiyat" Type="float" />
+          <Property Name="Stok" Type="int" />
+          <Property Name="Uyumluluk" Type="nvarchar" MaxLength="50" />
+          <Property Name="Yapi" Type="nvarchar" MaxLength="50" />
+          <Property Name="IslemciSoketTipi" Type="nvarchar" MaxLength="50" />
+          <Property Name="RamTipi" Type="nvarchar" MaxLength="50" />
+          <Property Name="MbChipseti" Type="nvarchar" MaxLength="50" />
+          <Property Name="MbRamSlotSayisi" Type="nvarchar" MaxLength="50" />
+          <Property Name="SpdifCikisi" Type="nvarchar" MaxLength="50" />
+          <Property Name="Ps2" Type="nvarchar" MaxLength="50" />
+          <Property Name="Sekizkanal" Type="nvarchar" MaxLength="50" />
+          <Property Name="Ethernet" Type="nvarchar" MaxLength="50" />
+          <Property Name="KablosuzWifi" Type="nvarchar" MaxLength="50" />
+          <Property Name="usb2" Type="nvarchar" MaxLength="50" />
+          <Property Name="usb3" Type="nvarchar" MaxLength="50" />
+          <Property Name="ClearCmosButon" Type="nvarchar" MaxLength="50" />
+          <Property Name="SupremeFX" Type="nvarchar" MaxLength="50" />
+          <Property Name="Bluetooth" Type="nvarchar" MaxLength="50" />
+          <Property Name="Ses" Type="nvarchar" MaxLength="50" />
+          <Property Name="PciExpress" Type="nvarchar" MaxLength="50" />
+          <Property Name="Sata3" Type="nvarchar" MaxLength="50" />
+          <Property Name="SataExpress" Type="nvarchar" MaxLength="50" />
+          <Property Name="M2Sata" Type="nvarchar" MaxLength="50" />
+          <Property Name="CoreI7" Type="nvarchar" MaxLength="50" />
+          <Property Name="Mensei" Type="nvarchar" MaxLength="50" />
+          <Property Name="Garanti" Type="nvarchar" MaxLength="50" />
+          <Property Name="resim1" Type="nvarchar(max)" />
+          <Property Name="resim2" Type="nvarchar(max)" />
+          <Property Name="resim3" Type="nvarchar(max)" />
+          <Property Name="resim4" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="EkranKartiUrunler">
+          <Key>
+            <PropertyRef Name="EkranKartiUrunID" />
+          </Key>
+          <Property Name="EkranKartiUrunID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EkranKartiAdi" Type="nvarchar(max)" />
+          <Property Name="Marka" Type="nvarchar" MaxLength="50" />
+          <Property Name="Fiyat" Type="float" />
+          <Property Name="Stok" Type="int" />
+          <Property Name="CekirdekHizi" Type="nvarchar" MaxLength="50" />
+          <Property Name="RamKapasitesi" Type="nvarchar" MaxLength="50" />
+          <Property Name="BellekHizi" Type="nvarchar" MaxLength="50" />
+          <Property Name="GrafikChipsetiMarkasi" Type="nvarchar" MaxLength="50" />
+          <Property Name="EkranKartiChipseti" Type="nvarchar" MaxLength="50" />
+          <Property Name="BellekTipi" Type="nvarchar" MaxLength="50" />
+          <Property Name="BellekArayuzu" Type="nvarchar" MaxLength="50" />
+          <Property Name="PciExpress3" Type="nvarchar" MaxLength="50" />
+          <Property Name="DisplayPort" Type="nvarchar" MaxLength="50" />
+          <Property Name="HdcpDestegi" Type="nvarchar" MaxLength="50" />
+          <Property Name="Dvi" Type="nvarchar" MaxLength="50" />
+          <Property Name="Hdmi" Type="nvarchar" MaxLength="50" />
+          <Property Name="GucTuketimi" Type="nvarchar" MaxLength="50" />
+          <Property Name="Mensei" Type="nvarchar" MaxLength="50" />
+          <Property Name="Garanti" Type="nvarchar" MaxLength="50" />
+          <Property Name="Cozunurluk" Type="nvarchar" MaxLength="50" />
+          <Property Name="resim1" Type="nvarchar(max)" />
+          <Property Name="resim2" Type="nvarchar(max)" />
+          <Property Name="resim3" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Fatura">
+          <Key>
+            <PropertyRef Name="FaturaID" />
+          </Key>
+          <Property Name="FaturaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UyeID" Type="int" />
+          <Property Name="UyeAdi" Type="nvarchar" MaxLength="50" />
+          <Property Name="UyeSoyad" Type="nvarchar" MaxLength="50" />
+          <Property Name="UyeAdres" Type="nvarchar(max)" />
+          <Property Name="Tarih" Type="date" />
+          <Property Name="UrunAdlari" Type="nvarchar(max)" />
+          <Property Name="UrunFiyatlari" Type="nvarchar(max)" />
+          <Property Name="UrunAdetleri" Type="nvarchar(max)" />
+          <Property Name="ToplamFiyat" Type="float" />
+        </EntityType>
+        <EntityType Name="IslemciUrunler">
+          <Key>
+            <PropertyRef Name="IslemciUrunID" />
+          </Key>
+          <Property Name="IslemciUrunID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IslemciAdi" Type="nvarchar(max)" />
+          <Property Name="Marka" Type="nvarchar" MaxLength="50" />
+          <Property Name="Fiyat" Type="float" />
+          <Property Name="Stok" Type="int" />
+          <Property Name="IslemciSoketTipi" Type="nvarchar" MaxLength="50" />
+          <Property Name="IslemciNumarasi" Type="nvarchar" MaxLength="50" />
+          <Property Name="IslemciTeknolojisi" Type="nvarchar" MaxLength="50" />
+          <Property Name="IslemciHizi" Type="nvarchar" MaxLength="50" />
+          <Property Name="IslemciOnBellek" Type="nvarchar" MaxLength="50" />
+          <Property Name="Mensei" Type="nvarchar" MaxLength="50" />
+          <Property Name="Garanti" Type="nvarchar" MaxLength="50" />
+          <Property Name="KutuluKutusuz" Type="nvarchar" MaxLength="50" />
+          <Property Name="resim1" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Sepet">
+          <Key>
+            <PropertyRef Name="SepetID" />
+          </Key>
+          <Property Name="SepetID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UyeID" Type="int" />
+          <Property Name="UrunAdi" Type="nvarchar(max)" />
+          <Property Name="UrunResim" Type="nvarchar(max)" />
+          <Property Name="UrunAdet" Type="int" />
+          <Property Name="UrunFiyat" Type="float" />
+          <Property Name="ToplamFiyat" Type="float" />
+          <Property Name="UrunID" Type="int" />
+          <Property Name="TurID" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Siparisler">
+          <Key>
+            <PropertyRef Name="SiparisID" />
+          </Key>
+          <Property Name="SiparisID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UyeID" Type="int" />
+          <Property Name="TurID" Type="nvarchar" MaxLength="50" />
+          <Property Name="UrunID" Type="int" />
+          <Property Name="UrunResim" Type="nvarchar(max)" />
+          <Property Name="UrunAdi" Type="nvarchar(max)" />
+          <Property Name="UrunFiyat" Type="float" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="Uyeler">
+          <Key>
+            <PropertyRef Name="UyeID" />
+          </Key>
+          <Property Name="UyeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ad" Type="nvarchar" MaxLength="50" />
+          <Property Name="Soyad" Type="nvarchar" MaxLength="50" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="Tel" Type="nvarchar" MaxLength="50" />
+          <Property Name="Sifre" Type="nvarchar" MaxLength="50" />
+          <Property Name="SifreTekrar" Type="nvarchar" MaxLength="50" />
+          <Property Name="DogumTarihi" Type="nvarchar" MaxLength="50" />
+          <Property Name="Cinsiyet" Type="nvarchar" MaxLength="50" />
+          <Property Name="GizliSoru" Type="nvarchar(max)" />
+          <Property Name="GizliSoruCevap" Type="nvarchar(max)" />
+          <Property Name="UyeFoto" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Yorumlar">
+          <Key>
+            <PropertyRef Name="YorumID" />
+          </Key>
+          <Property Name="YorumID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AdSoyad" Type="nvarchar" MaxLength="50" />
+          <Property Name="YorumBasligi" Type="nvarchar(max)" />
+          <Property Name="Yorum" Type="nvarchar(max)" />
+          <Property Name="UyeID" Type="int" />
+          <Property Name="UrunID" Type="int" />
+          <Property Name="TurID" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityContainer Name="eTicaretModelStoreContainer">
+          <EntitySet Name="Adminler" EntityType="Self.Adminler" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AdresTanimlari" EntityType="Self.AdresTanimlari" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AnakartUrunler" EntityType="Self.AnakartUrunler" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EkranKartiUrunler" EntityType="Self.EkranKartiUrunler" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Fatura" EntityType="Self.Fatura" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="IslemciUrunler" EntityType="Self.IslemciUrunler" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sepet" EntityType="Self.Sepet" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Siparisler" EntityType="Self.Siparisler" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Uyeler" EntityType="Self.Uyeler" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Yorumlar" EntityType="Self.Yorumlar" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="eTicaretModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="AdresTanimlari">
+          <Key>
+            <PropertyRef Name="AdresTanimiID" />
+          </Key>
+          <Property Name="AdresTanimiID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UyeID" Type="Int32" />
+          <Property Name="Ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SehirAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IlceAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Adres" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Tel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="AnakartUrunler">
+          <Key>
+            <PropertyRef Name="AnakartUrunID" />
+          </Key>
+          <Property Name="AnakartUrunID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AnakartAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Marka" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Fiyat" Type="Double" />
+          <Property Name="Stok" Type="Int32" />
+          <Property Name="Uyumluluk" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Yapi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IslemciSoketTipi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="RamTipi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MbChipseti" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="MbRamSlotSayisi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SpdifCikisi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Ps2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Sekizkanal" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Ethernet" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="KablosuzWifi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="usb2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="usb3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ClearCmosButon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SupremeFX" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Bluetooth" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Ses" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PciExpress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Sata3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SataExpress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="M2Sata" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CoreI7" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Mensei" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Garanti" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="resim1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="resim2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="resim3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="resim4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="EkranKartiUrunler">
+          <Key>
+            <PropertyRef Name="EkranKartiUrunID" />
+          </Key>
+          <Property Name="EkranKartiUrunID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EkranKartiAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Marka" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Fiyat" Type="Double" />
+          <Property Name="Stok" Type="Int32" />
+          <Property Name="CekirdekHizi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="RamKapasitesi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="BellekHizi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="GrafikChipsetiMarkasi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="EkranKartiChipseti" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="BellekTipi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="BellekArayuzu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PciExpress3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DisplayPort" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="HdcpDestegi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Dvi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Hdmi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="GucTuketimi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Mensei" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Garanti" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Cozunurluk" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="resim1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="resim2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="resim3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Fatura">
+          <Key>
+            <PropertyRef Name="FaturaID" />
+          </Key>
+          <Property Name="FaturaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UyeID" Type="Int32" />
+          <Property Name="UyeAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UyeSoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UyeAdres" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Tarih" Type="DateTime" Precision="0" />
+          <Property Name="UrunAdlari" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="UrunFiyatlari" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="UrunAdetleri" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ToplamFiyat" Type="Double" />
+        </EntityType>
+        <EntityType Name="IslemciUrunler">
+          <Key>
+            <PropertyRef Name="IslemciUrunID" />
+          </Key>
+          <Property Name="IslemciUrunID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IslemciAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Marka" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Fiyat" Type="Double" />
+          <Property Name="Stok" Type="Int32" />
+          <Property Name="IslemciSoketTipi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IslemciNumarasi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IslemciTeknolojisi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IslemciHizi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IslemciOnBellek" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Mensei" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Garanti" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="KutuluKutusuz" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="resim1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Sepet">
+          <Key>
+            <PropertyRef Name="SepetID" />
+          </Key>
+          <Property Name="SepetID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UyeID" Type="Int32" />
+          <Property Name="UrunAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="UrunResim" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="UrunAdet" Type="Int32" />
+          <Property Name="UrunFiyat" Type="Double" />
+          <Property Name="ToplamFiyat" Type="Double" />
+          <Property Name="UrunID" Type="Int32" />
+          <Property Name="TurID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Siparisler">
+          <Key>
+            <PropertyRef Name="SiparisID" />
+          </Key>
+          <Property Name="SiparisID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UyeID" Type="Int32" />
+          <Property Name="TurID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="UrunID" Type="Int32" />
+          <Property Name="UrunResim" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="UrunAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="UrunFiyat" Type="Double" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Uyeler">
+          <Key>
+            <PropertyRef Name="UyeID" />
+          </Key>
+          <Property Name="UyeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Tel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="SifreTekrar" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DogumTarihi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Cinsiyet" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="GizliSoru" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="GizliSoruCevap" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="UyeFoto" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Yorumlar">
+          <Key>
+            <PropertyRef Name="YorumID" />
+          </Key>
+          <Property Name="YorumID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AdSoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="YorumBasligi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Yorum" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="UyeID" Type="Int32" />
+          <Property Name="UrunID" Type="Int32" />
+          <Property Name="TurID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="eTicaretEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AdresTanimlari" EntityType="Self.AdresTanimlari" />
+          <EntitySet Name="AnakartUrunler" EntityType="Self.AnakartUrunler" />
+          <EntitySet Name="EkranKartiUrunler" EntityType="Self.EkranKartiUrunler" />
+          <EntitySet Name="Fatura" EntityType="Self.Fatura" />
+          <EntitySet Name="IslemciUrunler" EntityType="Self.IslemciUrunler" />
+          <EntitySet Name="Sepet" EntityType="Self.Sepet" />
+          <EntitySet Name="Siparisler" EntityType="Self.Siparisler" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+          <EntitySet Name="Uyeler" EntityType="Self.Uyeler" />
+          <EntitySet Name="Yorumlar" EntityType="Self.Yorumlar" />
+          <EntitySet Name="Adminler" EntityType="eTicaretModel.Adminler" />
+        </EntityContainer>
+        <EntityType Name="Adminler">
+          <Key>
+            <PropertyRef Name="AdminID" />
+          </Key>
+          <Property Name="AdminID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="KullaniciAdi" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Sifre" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Role" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="eTicaretModelStoreContainer" CdmEntityContainer="eTicaretEntities">
+          <EntitySetMapping Name="AdresTanimlari">
+            <EntityTypeMapping TypeName="eTicaretModel.AdresTanimlari">
+              <MappingFragment StoreEntitySet="AdresTanimlari">
+                <ScalarProperty Name="AdresTanimiID" ColumnName="AdresTanimiID" />
+                <ScalarProperty Name="UyeID" ColumnName="UyeID" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+                <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+                <ScalarProperty Name="SehirAdi" ColumnName="SehirAdi" />
+                <ScalarProperty Name="IlceAdi" ColumnName="IlceAdi" />
+                <ScalarProperty Name="Adres" ColumnName="Adres" />
+                <ScalarProperty Name="Tel" ColumnName="Tel" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AnakartUrunler">
+            <EntityTypeMapping TypeName="eTicaretModel.AnakartUrunler">
+              <MappingFragment StoreEntitySet="AnakartUrunler">
+                <ScalarProperty Name="AnakartUrunID" ColumnName="AnakartUrunID" />
+                <ScalarProperty Name="AnakartAdi" ColumnName="AnakartAdi" />
+                <ScalarProperty Name="Marka" ColumnName="Marka" />
+                <ScalarProperty Name="Fiyat" ColumnName="Fiyat" />
+                <ScalarProperty Name="Stok" ColumnName="Stok" />
+                <ScalarProperty Name="Uyumluluk" ColumnName="Uyumluluk" />
+                <ScalarProperty Name="Yapi" ColumnName="Yapi" />
+                <ScalarProperty Name="IslemciSoketTipi" ColumnName="IslemciSoketTipi" />
+                <ScalarProperty Name="RamTipi" ColumnName="RamTipi" />
+                <ScalarProperty Name="MbChipseti" ColumnName="MbChipseti" />
+                <ScalarProperty Name="MbRamSlotSayisi" ColumnName="MbRamSlotSayisi" />
+                <ScalarProperty Name="SpdifCikisi" ColumnName="SpdifCikisi" />
+                <ScalarProperty Name="Ps2" ColumnName="Ps2" />
+                <ScalarProperty Name="Sekizkanal" ColumnName="Sekizkanal" />
+                <ScalarProperty Name="Ethernet" ColumnName="Ethernet" />
+                <ScalarProperty Name="KablosuzWifi" ColumnName="KablosuzWifi" />
+                <ScalarProperty Name="usb2" ColumnName="usb2" />
+                <ScalarProperty Name="usb3" ColumnName="usb3" />
+                <ScalarProperty Name="ClearCmosButon" ColumnName="ClearCmosButon" />
+                <ScalarProperty Name="SupremeFX" ColumnName="SupremeFX" />
+                <ScalarProperty Name="Bluetooth" ColumnName="Bluetooth" />
+                <ScalarProperty Name="Ses" ColumnName="Ses" />
+                <ScalarProperty Name="PciExpress" ColumnName="PciExpress" />
+                <ScalarProperty Name="Sata3" ColumnName="Sata3" />
+                <ScalarProperty Name="SataExpress" ColumnName="SataExpress" />
+                <ScalarProperty Name="M2Sata" ColumnName="M2Sata" />
+                <ScalarProperty Name="CoreI7" ColumnName="CoreI7" />
+                <ScalarProperty Name="Mensei" ColumnName="Mensei" />
+                <ScalarProperty Name="Garanti" ColumnName="Garanti" />
+                <ScalarProperty Name="resim1" ColumnName="resim1" />
+                <ScalarProperty Name="resim2" ColumnName="resim2" />
+                <ScalarProperty Name="resim3" ColumnName="resim3" />
+                <ScalarProperty Name="resim4" ColumnName="resim4" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EkranKartiUrunler">
+            <EntityTypeMapping TypeName="eTicaretModel.EkranKartiUrunler">
+              <MappingFragment StoreEntitySet="EkranKartiUrunler">
+                <ScalarProperty Name="EkranKartiUrunID" ColumnName="EkranKartiUrunID" />
+                <ScalarProperty Name="EkranKartiAdi" ColumnName="EkranKartiAdi" />
+                <ScalarProperty Name="Marka" ColumnName="Marka" />
+                <ScalarProperty Name="Fiyat" ColumnName="Fiyat" />
+                <ScalarProperty Name="Stok" ColumnName="Stok" />
+                <ScalarProperty Name="CekirdekHizi" ColumnName="CekirdekHizi" />
+                <ScalarProperty Name="RamKapasitesi" ColumnName="RamKapasitesi" />
+                <ScalarProperty Name="BellekHizi" ColumnName="BellekHizi" />
+                <ScalarProperty Name="GrafikChipsetiMarkasi" ColumnName="GrafikChipsetiMarkasi" />
+                <ScalarProperty Name="EkranKartiChipseti" ColumnName="EkranKartiChipseti" />
+                <ScalarProperty Name="BellekTipi" ColumnName="BellekTipi" />
+                <ScalarProperty Name="BellekArayuzu" ColumnName="BellekArayuzu" />
+                <ScalarProperty Name="PciExpress3" ColumnName="PciExpress3" />
+                <ScalarProperty Name="DisplayPort" ColumnName="DisplayPort" />
+                <ScalarProperty Name="HdcpDestegi" ColumnName="HdcpDestegi" />
+                <ScalarProperty Name="Dvi" ColumnName="Dvi" />
+                <ScalarProperty Name="Hdmi" ColumnName="Hdmi" />
+                <ScalarProperty Name="GucTuketimi" ColumnName="GucTuketimi" />
+                <ScalarProperty Name="Mensei" ColumnName="Mensei" />
+                <ScalarProperty Name="Garanti" ColumnName="Garanti" />
+                <ScalarProperty Name="Cozunurluk" ColumnName="Cozunurluk" />
+                <ScalarProperty Name="resim1" ColumnName="resim1" />
+                <ScalarProperty Name="resim2" ColumnName="resim2" />
+                <ScalarProperty Name="resim3" ColumnName="resim3" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Fatura">
+            <EntityTypeMapping TypeName="eTicaretModel.Fatura">
+              <MappingFragment StoreEntitySet="Fatura">
+                <ScalarProperty Name="FaturaID" ColumnName="FaturaID" />
+                <ScalarProperty Name="UyeID" ColumnName="UyeID" />
+                <ScalarProperty Name="UyeAdi" ColumnName="UyeAdi" />
+                <ScalarProperty Name="UyeSoyad" ColumnName="UyeSoyad" />
+                <ScalarProperty Name="UyeAdres" ColumnName="UyeAdres" />
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+                <ScalarProperty Name="UrunAdlari" ColumnName="UrunAdlari" />
+                <ScalarProperty Name="UrunFiyatlari" ColumnName="UrunFiyatlari" />
+                <ScalarProperty Name="UrunAdetleri" ColumnName="UrunAdetleri" />
+                <ScalarProperty Name="ToplamFiyat" ColumnName="ToplamFiyat" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IslemciUrunler">
+            <EntityTypeMapping TypeName="eTicaretModel.IslemciUrunler">
+              <MappingFragment StoreEntitySet="IslemciUrunler">
+                <ScalarProperty Name="IslemciUrunID" ColumnName="IslemciUrunID" />
+                <ScalarProperty Name="IslemciAdi" ColumnName="IslemciAdi" />
+                <ScalarProperty Name="Marka" ColumnName="Marka" />
+                <ScalarProperty Name="Fiyat" ColumnName="Fiyat" />
+                <ScalarProperty Name="Stok" ColumnName="Stok" />
+                <ScalarProperty Name="IslemciSoketTipi" ColumnName="IslemciSoketTipi" />
+                <ScalarProperty Name="IslemciNumarasi" ColumnName="IslemciNumarasi" />
+                <ScalarProperty Name="IslemciTeknolojisi" ColumnName="IslemciTeknolojisi" />
+                <ScalarProperty Name="IslemciHizi" ColumnName="IslemciHizi" />
+                <ScalarProperty Name="IslemciOnBellek" ColumnName="IslemciOnBellek" />
+                <ScalarProperty Name="Mensei" ColumnName="Mensei" />
+                <ScalarProperty Name="Garanti" ColumnName="Garanti" />
+                <ScalarProperty Name="KutuluKutusuz" ColumnName="KutuluKutusuz" />
+                <ScalarProperty Name="resim1" ColumnName="resim1" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sepet">
+            <EntityTypeMapping TypeName="eTicaretModel.Sepet">
+              <MappingFragment StoreEntitySet="Sepet">
+                <ScalarProperty Name="SepetID" ColumnName="SepetID" />
+                <ScalarProperty Name="UyeID" ColumnName="UyeID" />
+                <ScalarProperty Name="UrunAdi" ColumnName="UrunAdi" />
+                <ScalarProperty Name="UrunResim" ColumnName="UrunResim" />
+                <ScalarProperty Name="UrunAdet" ColumnName="UrunAdet" />
+                <ScalarProperty Name="UrunFiyat" ColumnName="UrunFiyat" />
+                <ScalarProperty Name="ToplamFiyat" ColumnName="ToplamFiyat" />
+                <ScalarProperty Name="UrunID" ColumnName="UrunID" />
+                <ScalarProperty Name="TurID" ColumnName="TurID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Siparisler">
+            <EntityTypeMapping TypeName="eTicaretModel.Siparisler">
+              <MappingFragment StoreEntitySet="Siparisler">
+                <ScalarProperty Name="SiparisID" ColumnName="SiparisID" />
+                <ScalarProperty Name="UyeID" ColumnName="UyeID" />
+                <ScalarProperty Name="TurID" ColumnName="TurID" />
+                <ScalarProperty Name="UrunID" ColumnName="UrunID" />
+                <ScalarProperty Name="UrunResim" ColumnName="UrunResim" />
+                <ScalarProperty Name="UrunAdi" ColumnName="UrunAdi" />
+                <ScalarProperty Name="UrunFiyat" ColumnName="UrunFiyat" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="eTicaretModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Uyeler">
+            <EntityTypeMapping TypeName="eTicaretModel.Uyeler">
+              <MappingFragment StoreEntitySet="Uyeler">
+                <ScalarProperty Name="UyeID" ColumnName="UyeID" />
+                <ScalarProperty Name="Ad" ColumnName="Ad" />
+                <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Tel" ColumnName="Tel" />
+                <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+                <ScalarProperty Name="SifreTekrar" ColumnName="SifreTekrar" />
+                <ScalarProperty Name="DogumTarihi" ColumnName="DogumTarihi" />
+                <ScalarProperty Name="Cinsiyet" ColumnName="Cinsiyet" />
+                <ScalarProperty Name="GizliSoru" ColumnName="GizliSoru" />
+                <ScalarProperty Name="GizliSoruCevap" ColumnName="GizliSoruCevap" />
+                <ScalarProperty Name="UyeFoto" ColumnName="UyeFoto" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Yorumlar">
+            <EntityTypeMapping TypeName="eTicaretModel.Yorumlar">
+              <MappingFragment StoreEntitySet="Yorumlar">
+                <ScalarProperty Name="YorumID" ColumnName="YorumID" />
+                <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+                <ScalarProperty Name="YorumBasligi" ColumnName="YorumBasligi" />
+                <ScalarProperty Name="Yorum" ColumnName="Yorum" />
+                <ScalarProperty Name="UyeID" ColumnName="UyeID" />
+                <ScalarProperty Name="UrunID" ColumnName="UrunID" />
+                <ScalarProperty Name="TurID" ColumnName="TurID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Adminler">
+            <EntityTypeMapping TypeName="eTicaretModel.Adminler">
+              <MappingFragment StoreEntitySet="Adminler">
+                <ScalarProperty Name="Role" ColumnName="Role" />
+                <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+                <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+                <ScalarProperty Name="AdminID" ColumnName="AdminID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

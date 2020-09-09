@@ -1,0 +1,274 @@
+﻿
+@{
+    Layout = null;
+}
+
+@*<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="siteTicaret.main" %>*@
+
+<!DOCTYPE html> 
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>TEKNOMAR</title>
+    <link href="~/Content/css/main.css" rel="stylesheet" />
+    <link href="~/Content/css/reset.css" rel="stylesheet" />
+    @*<link href="~/Content/bootstrap.min.css" rel="stylesheet" />*@
+    <link href="~/Content/css/nivo-slider.css" rel="stylesheet" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <link href="~/Content/css/default.css" rel="stylesheet" />
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+
+    <script src="~/Scripts/SpryTabbedPanels.js"></script>
+    <link href="~/Content/css/SpryTabbedPanels.css" rel="stylesheet" />
+
+    <link href="~/Content/css/SpryCollapsiblePanel.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/SpryCollapsiblePanel.js" type="text/javascript"></script>
+    <script type="text/javascript" src="~/Scripts/lightbox.js"></script>
+    <link rel="stylesheet" type="text/css" href="~/Content/css/lightbox.css" media="screen" />
+
+
+    
+</head>
+
+<body>
+    <form>
+
+        <div id="header">
+
+            <div id="ana">
+                <div id="ana2">
+                    <div class="iletisim">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img class="resim" src="~/images/phone.png" width="15" height="15" />
+                                    0850 526 2626
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img class="resim" src="~/images/mail.png" width="15" height="15" />
+                                    info@teknomar.com
+                                </a>
+                            </li>
+                            <li>
+                                @*<a href="~/Language/Index">
+                                    <img class="resim" src="~/images/tr.png" width="15" height="15" />
+                                </a>*@
+                                @Html.ActionLink("TR","Change","Language", new { LanguageAbbrevation = "tr" },null)
+                                
+                            </li>
+                            <li>
+                                @*<a href="~/Language/Index">
+                                    <img class="resim" src="~/images/en.png" width="15" height="15" />
+                                </a>*@
+                                @Html.ActionLink("EN", "Change", "Language", new { LanguageAbbrevation = "en" }, null)
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="sosyal">
+                        <a href="#" class="pic">
+                            <img src="~/images/fa.png" width="35px" height="35px" />
+                        </a>
+                        <a href="#" class="pic2">
+                            <img src="~/images/tw.png" width="35px" height="35px" />
+                        </a>
+                        <a href="#" class="pic3">
+                            <img src="~/images/ld.png" width="35px" height="35px" />
+                        </a>
+                        <a href="#" class="pic4">
+                            <img src="~/images/gg.png" width="35px" height="35px" />
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="header2">
+                <div id="logo">
+                    <a href="~/Home/Index">
+                        <img src="~/images/LOGOo.fw.png" />
+                    </a>
+                </div>
+
+                <div id="menu">
+                    <ul>
+                        <li>
+                            @Html.ActionLink(Teknomar.Resource.Kategoriler, "#", "#")
+
+                            <ul>
+                                <li>@Html.ActionLink(Teknomar.Resource.Anakart, "Anakart", "Home")@*<a href="anakart.aspx">Anakart</a>*@</li>
+                                <li>@Html.ActionLink(Teknomar.Resource.Islemci, "Islemci", "Home")</li>
+                                <li>@Html.ActionLink(Teknomar.Resource.EkranKarti, "EkranKarti", "Home")</li>
+                                <li>@Html.ActionLink(Teknomar.Resource.Bellek, "#", "#")</li>
+                                <li>@Html.ActionLink(Teknomar.Resource.HariciDisk, "#", "#")</li>
+                                <li>@Html.ActionLink(Teknomar.Resource.Ssd, "#", "#")</li>
+                                <li>@Html.ActionLink(Teknomar.Resource.SabitDisk, "#", "#")</li>
+                                <li>@Html.ActionLink(Teknomar.Resource.GucKaynagi, "#", "#")</li>
+                                <li>@Html.ActionLink(Teknomar.Resource.Kasa, "#", "#")</li>
+                                <li>@Html.ActionLink(Teknomar.Resource.Monitor, "#", "#")</li>
+                                <li>@Html.ActionLink(Teknomar.Resource.TvKarti, "#", "#")</li>
+                                <li>@Html.ActionLink(Teknomar.Resource.SesKarti, "#", "#")</li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="arama">
+                   @* <asp:TextBox ID="txtarama" runat="server" placeholder="Search"></asp:TextBox>*@
+                   @Html.TextBox("txtarama", "Arama...")
+                </div>
+                <div class="search">
+                   
+                    @*<asp:Button ID="btnarama" runat="server" OnClick="btnarama_Click" />*@
+                    @*<button type="submit" class="search">Arama</button>*@
+                    &nbsp;
+                    @Html.ActionLink(Teknomar.Resource.Ara, "Index", new {@classs="btnarama" })
+                </div>
+                <div class="giris">
+                    @if (Session["UserID"] == null)
+                    {
+                        <a href="@Url.Action("Uyelik", "Home")">
+                            <img src="~/images/uyelik.png" width="15" height="15" class="resim" />@Html.Label(Teknomar.Resource.Uyelik)
+                        </a>
+                    }
+                    
+                    <a href="@Url.Action("Sepet", "Home")">
+                        <img src="~/images/sepet.png" width="15" height="15" class="resim" />@Html.Label(Teknomar.Resource.Sepetim)
+                    </a>
+                    @if (Session["UserID"] != null)
+                    {
+                        <a href="@Url.Action("Cikis", "Home")">
+                           @Html.Label(Teknomar.Resource.CikisYap)
+                        </a>
+                    }
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div id="contact">
+            <div class="con2">
+                <div class="co">
+
+                    @*<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>*@
+                    @RenderBody()
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div id="footer">
+
+            <div id="ftr">
+
+                <div class="il">
+
+
+                    <div>
+
+                        <table class="auto-style1">
+                            <tr>
+                                <td class="auto-style16" style="padding: 10px 10px 10px 0px; font-size: 20px;">@Html.Label(Teknomar.Resource.Kurumsal)</td>
+                                <td class="auto-style25"></td>
+                                <td class="auto-style24"></td>
+                                <td class="auto-style23"></td>
+                                <td class="auto-style16" style="padding: 10px 10px 10px 0px; font-size: 20px;">@Html.Label(Teknomar.Resource.Kategoriler)</td>
+                                <td class="auto-style23"></td>
+                                <td class="auto-style23"></td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style22">@Html.ActionLink(Teknomar.Resource.Hakkimizda, "#", "#")</td>
+                                <td class="auto-style26"></td>
+                                <td class="auto-style22">@Html.ActionLink(Teknomar.Resource.GizlilikPolitikamiz, "#", "#")</td>
+                                <td class="auto-style"></td>
+                                <td class="auto-style22">@Html.ActionLink(Teknomar.Resource.Anakart, "Anakart", "Home")</td>
+                                <td class="auto-style"></td>
+                                <td class="auto-style">@Html.ActionLink(Teknomar.Resource.HariciDisk, "#", "#")</td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style22">@Html.ActionLink(Teknomar.Resource.MusteriHizmetleri, "#", "#")</td>
+                                <td class="auto-style26"></td>
+                                <td class="auto-style22">@Html.ActionLink(Teknomar.Resource.Iletisim, "#", "#")</td>
+                                <td class="auto-style"></td>
+                                <td class="auto-style22">@Html.ActionLink(Teknomar.Resource.Islemci, "Islemci", "Home")</td>
+                                <td class="auto-style"></td>
+                                <td class="auto-style">@Html.ActionLink(Teknomar.Resource.Ssd, "#", "#")</td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style22">@Html.ActionLink(Teknomar.Resource.KeyifliGaranti, "#", "#")</td>
+                                <td class="auto-style26"></td>
+                                <td class="auto-style22">@Html.ActionLink(Teknomar.Resource.ServisTakipFormu, "#", "#")</td>
+                                <td class="auto-style"></td>
+                                <td class="auto-style22">@Html.ActionLink(Teknomar.Resource.EkranKarti, "EkranKarti", "Home")</td>
+                                <td class="auto-style"></td>
+                                <td class="auto-style">@Html.ActionLink(Teknomar.Resource.SabitDisk, "#", "#")</td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style22">@Html.ActionLink(Teknomar.Resource.SiparisAsamalari, "#", "#")</td>
+                                <td class="auto-style26"></td>
+                                <td class="auto-style22">@Html.ActionLink(Teknomar.Resource.IslemRehberi, "#", "#")</td>
+                                <td class="auto-style"></td>
+                                <td class="auto-style22">@Html.ActionLink(Teknomar.Resource.Bellek, "#", "#")</td>
+                                <td class="auto-style"></td>
+                                <td class="auto-style">@Html.ActionLink(Teknomar.Resource.GucKaynagi, "#", "#")</td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style22">@Html.ActionLink(Teknomar.Resource.sss, "#", "#")</td>
+                                <td class="auto-style26"></td>
+                                <td class="auto-style22">@Html.ActionLink(Teknomar.Resource.SiteHaritasi, "#", "#")</td>
+                                <td class="auto-style"></td>
+                                <td class="auto-style22">@Html.ActionLink(Teknomar.Resource.TvKarti, "#", "#")</td>
+                                <td class="auto-style"></td>
+                                <td class="auto-style">@Html.ActionLink(Teknomar.Resource.Kasa, "#", "#")</td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style22">@Html.ActionLink(Teknomar.Resource.InsanKaynaklari, "#", "#")</td>
+                                <td class="auto-style26"></td>
+                                <td class="auto-style22">@Html.ActionLink(Teknomar.Resource.MarkaHaritasi, "#", "#")</td>
+                                <td class="auto-style"></td>
+                                <td class="auto-style22">@Html.ActionLink(Teknomar.Resource.SesKarti, "#", "#")</td>
+                                <td class="auto-style"></td>
+                                <td class="auto-style">@Html.ActionLink(Teknomar.Resource.Monitor, "#", "#")</td>
+                            </tr>
+
+
+
+                        </table>
+
+                        <div class="cizgi"></div>
+                        <p class="yazi">
+                            @Html.Label(Teknomar.Resource.Turkiyenin)<br />
+                            Copyright 2017 TEKNOMAR San. ve Tic. A.Ş.
+                        </p>
+                        <img src="~/images/pay-icons.png" class="imga" />
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+    </form>
+</body>
+</html>

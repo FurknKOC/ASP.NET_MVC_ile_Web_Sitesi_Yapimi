@@ -1,0 +1,121 @@
+﻿
+@model Teknomar.Models.EntityFramework.Uyeler
+
+@{
+    ViewBag.Title = "Uyelik";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    List<SelectListItem> Cinsiyet = new List<SelectListItem>();
+    Cinsiyet.Add(new SelectListItem { Text = Teknomar.Resource.Erkek, Value = Teknomar.Resource.Erkek });
+    Cinsiyet.Add(new SelectListItem { Text = Teknomar.Resource.Kadin, Value = Teknomar.Resource.Kadin });
+
+    List<SelectListItem> GizliSoru = new List<SelectListItem>();
+    GizliSoru.Add(new SelectListItem { Text = Teknomar.Resource.IlkOkul, Value = Teknomar.Resource.IlkOkul });
+    GizliSoru.Add(new SelectListItem { Text = Teknomar.Resource.IlkAraba, Value = Teknomar.Resource.IlkAraba });
+
+}
+<div class="uyelik">
+    <div class="anayazi2">
+        <h1>@Html.Label(Teknomar.Resource.UyeGirisi)</h1>
+        <p>@Html.Label(Teknomar.Resource.GirisYap)</p>
+    </div>
+    <table>
+         @using (Html.BeginForm("Uyelik", "Home", FormMethod.Post))
+        {
+            <tr>
+                <td>@Html.TextBoxFor(x => x.Email, new { @class = "form-control", placeholder = Teknomar.Resource.EmailAdresiniz })</td>
+            </tr>
+            <tr>
+                <td>@Html.PasswordFor(x => x.Sifre, new { @class = "form-control", placeholder = Teknomar.Resource.Sifreniz })</td>
+            </tr>
+            <tr>
+                <td><button type="submit" class="buton">@Html.Label(Teknomar.Resource.GirisYap)</button></td>
+            </tr>
+
+        }
+        <tr><td>@ViewBag.Mesaj</td></tr>
+
+    </table>
+
+</div>
+
+<div class="yeniuyelik">
+    <div class="anayazi2">
+        <h1>@Html.Label(Teknomar.Resource.YeniUyelik)</h1>
+        <p>@Html.Label(Teknomar.Resource.UyeOl)</p>
+    </div>
+
+    <p id="bilgilendirme">@Html.Label(Teknomar.Resource.Bilgilendirme)</p>
+    <table>
+@using (Html.BeginForm("YeniUyelik", "Home", FormMethod.Post))
+{ 
+        <tr>
+            <td>@Html.TextBoxFor(x => x.Ad, new { @class = "form-control", placeholder = Teknomar.Resource.Adiniz })</td>
+            <td>@Html.TextBoxFor(x => x.Soyad, new { @class = "form-control", placeholder = Teknomar.Resource.Soyadiniz })</td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>@Html.TextBoxFor(x => x.Email, new { @class = "form-control", placeholder = Teknomar.Resource.EmailAdresiniz })</td>
+            <td>@Html.TextBoxFor(x => x.Tel, new { @class = "form-control", placeholder = Teknomar.Resource.TelefonNumaraniz })</td>
+        </tr>
+        <tr>
+            <td>
+                
+            </td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td>@Html.PasswordFor(x => x.Sifre, new { @class = "form-control", placeholder = Teknomar.Resource.Sifre })</td>
+            <td>@Html.PasswordFor(x => x.SifreTekrar, new { @class = "form-control", placeholder = Teknomar.Resource.SifreTekrar })</td>
+        </tr>
+        <tr>
+
+            <td></td>
+            <td>
+                
+            </td>
+        </tr>
+        <tr class="selectoge">
+            <td>
+                @Html.DropDownListFor(x => x.GizliSoru, GizliSoru, Teknomar.Resource.GizliSoru, new { @class = "form-control" })
+            </td>
+            <td>
+                @Html.TextBoxFor(x => x.GizliSoruCevap, new { @class = "form-control", placeholder = Teknomar.Resource.GizliSoruCevap })
+            </td>
+        </tr>
+         
+        <tr>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr class="selectoge">
+            <td>
+                @Html.DropDownListFor(x => x.Cinsiyet, Cinsiyet, Teknomar.Resource.Cinsiyet, new { @class = "form-control" })
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+
+        </tr>
+
+        <tr>
+            <td> <button type="submit" class="buton">@Html.Label(Teknomar.Resource.UyeOl)</button></td>
+            <td></td>
+
+        </tr>
+}
+    </table>
+
+
+</div>
+
+

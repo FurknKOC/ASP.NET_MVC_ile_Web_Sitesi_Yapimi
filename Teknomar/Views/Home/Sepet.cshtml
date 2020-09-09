@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Sepet";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<table>
+    <thead>
+        <tr>
+            <td>
+                <h2>@Html.Label(Teknomar.Resource.Sepetim)</h2>
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                
+                @if (Session["UyeAD"] != null)
+                {
+                    <p>@Html.Label(Teknomar.Resource.Hosgeldiniz) @Session["UyeAD"].ToString()</p>
+                }
+               
+            </td>
+        </tr>
+
+    </tbody>
+</table>
+
+
+
+

@@ -1,0 +1,85 @@
+﻿@using Teknomar.Models.EntityFramework;
+@model List<AnakartUrunler>
+@{
+    ViewBag.Title = "Anakart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    int AnakartSayisi = 0;
+}
+@foreach (var AnakartUrunler in Model)
+{
+    AnakartSayisi++;
+}
+@{
+    int Degisken = @AnakartSayisi / 4;
+    int sayac = 0;
+    int sayac2 = 4;
+    int[] anakartIdler = new int[AnakartSayisi];
+    string[] anakartAdlari = new string[AnakartSayisi];
+    string[] anakartResimleri = new string[AnakartSayisi];
+    double[] anakartFiyatlar = new double[AnakartSayisi];
+
+}
+<div class="listeleme">
+    <div class="konum">
+        <p>@Html.Label(Teknomar.Resource.Anakartlar)</p>
+    </div>  
+    @AnakartSayisi
+ 
+<table>
+    <tbody>
+        @foreach (var AnakartUrunler in Model)
+        { 
+           <tr>
+                <td>
+                    <a>
+                        <div class="kolon2">
+                            <img src="~/@AnakartUrunler.resim1.ToString()" width="200" height="200"/>
+                            <h2>@AnakartUrunler.Fiyat ₺</h2>
+                            <p>@AnakartUrunler.AnakartAdi</p>
+                             @Html.ActionLink(Teknomar.Resource.UrunuGor, "AnakartID", new {ID=AnakartUrunler.AnakartUrunID})
+                        </div>
+                    </a>
+                            
+                </td>
+                
+            </tr>
+        }
+    </tbody>
+   @* @for (int i = 0; i < AnakartSayisi; i++)
+        {
+            anakartIdler[i] = 
+    }
+ 
+
+    <tbody>
+        @for (int i = 0; i < Degisken+1 ; i++)
+        {
+            <tr>
+                @for (int j = sayac;  j < sayac2;  j++)
+                {
+                    if (anakartIdler[j] == null)
+                    {
+                        break;
+                    }
+                    <td>
+                        <a>
+                            <div class="kolon2">
+                                <img src="~/@anakartResimleri[j]" width="200" height="200" />
+                                <h2>@anakartFiyatlar[j] ₺</h2>
+                                <p>@anakartAdlari[j]</p>
+                                @Html.ActionLink("Ürünü Gör", "AnakartUrunSayfasi", new { urunID = anakartIdler[j] })
+                            </div>
+                        </a>
+                    </td>
+                }
+            </tr>
+            @sayac= sayac + 4;
+            sayac2 = sayac + 4;
+        }
+    </tbody>*@
+</table>
+    
+    
+
+</div>
+

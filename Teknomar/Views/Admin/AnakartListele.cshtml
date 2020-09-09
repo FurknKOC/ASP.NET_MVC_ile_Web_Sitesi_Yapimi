@@ -1,0 +1,51 @@
+﻿
+@model List<Teknomar.Models.EntityFramework.AnakartUrunler>
+@{
+    ViewBag.Title = "AnakartListele";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+<h2>Anakart Listesi</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Anakart Adı</th>
+            <th>Marka</th>
+            <th>Fiyat</th>
+            <th>Stok</th>
+            <th>Uyumluluk</th>
+            <th>Yapı</th>
+            <th>İşlemci Soket Tipi</th>
+            <th>Ram Tipi</th>
+            <th>Chip Seti</th>
+            <th>Ram Slot Sayısı</th>
+            <th>Menşei</th>
+            <th>Garanti</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var AnakartUrunler in Model)
+        {
+            <tr>
+                <td>@AnakartUrunler.AnakartAdi</td>
+                <td>@AnakartUrunler.Marka</td>
+                <td>@AnakartUrunler.Fiyat</td>
+                <td>@AnakartUrunler.Stok</td>
+                <td>@AnakartUrunler.Uyumluluk</td>
+                <td>@AnakartUrunler.Yapi</td>
+                <td>@AnakartUrunler.IslemciSoketTipi</td>
+                <td>@AnakartUrunler.RamTipi</td>
+                <td>@AnakartUrunler.MbChipseti</td>
+                <td>@AnakartUrunler.MbRamSlotSayisi</td>
+                <td>@AnakartUrunler.Mensei</td>
+                <td>@AnakartUrunler.Garanti</td>
+                <td>@Html.ActionLink("Güncelle","Guncelle", new {id=AnakartUrunler.AnakartUrunID }, new {@class="btn btn-success" })</td>
+                <td>@Html.ActionLink("Sil", "AnakartSil", new { id = AnakartUrunler.AnakartUrunID }, new { @class = "btn btn-danger" })</td>
+            </tr>
+        }
+        
+    </tbody>
+</table>

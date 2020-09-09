@@ -1,0 +1,211 @@
+﻿
+
+@model Teknomar.Models.EntityFramework.AnakartUrunler
+@{
+    ViewBag.Title = "AnakartUrunSayfasi";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    List<SelectListItem> AnakartSayisi = new List<SelectListItem>();
+    AnakartSayisi.Add(new SelectListItem { Text = "1", Value = "1" });
+    AnakartSayisi.Add(new SelectListItem { Text = "2", Value = "2", });
+    AnakartSayisi.Add(new SelectListItem { Text = "3", Value = "3", });
+    AnakartSayisi.Add(new SelectListItem { Text = "4", Value = "4", });
+}
+
+<script language="javascript" type="application/javascript">
+
+    isim=new Array();
+    isim[0] = "<%=resim%>";
+    isim[1] = "<%=resim2%>";
+    isim[2] = "<%=resim3%>";
+    isim[3] = "<%=resim4%>";
+    var i=0;
+    slider=function slider1(){
+        document.getElementById('resim').src=isim[i];i++;
+        if(i==6){
+        i=0;
+        }
+    }
+
+    function deneme(lnk){
+    document.getElementById('resim').src=lnk;
+    clearInterval(zaman);
+    }
+</script>
+<div class="urunsayfasi1">
+    <img id="resim" src="~/@Html.DisplayTextFor(m=>m.resim1)" width="400px" height="400px" />
+    <div class="resimler">
+        <ul>
+            <li><a href="~/@Html.DisplayTextFor(m=>m.resim1)" data-lightbox="~/@Html.DisplayTextFor(m=>m.resim1)" onmouseover="deneme(~/@Html.DisplayTextFor(m=>m.resim1))"><img src="~/@Html.DisplayTextFor(m=>m.resim1)" width="70" height="72" /></a></li>
+            <li><a href="~/@Html.DisplayTextFor(m=>m.resim2)" data-lightbox="~/@Html.DisplayTextFor(m=>m.resim2)" onmouseover="deneme(~/@Html.DisplayTextFor(m=>m.resim2))"><img src="~/@Html.DisplayTextFor(m=>m.resim2)" width="70" height="72" /></a></li>
+            <li><a href="~/@Html.DisplayTextFor(m=>m.resim3)" data-lightbox="~/@Html.DisplayTextFor(m=>m.resim3)" onmouseover="deneme(~/@Html.DisplayTextFor(m=>m.resim3))"><img src="~/@Html.DisplayTextFor(m=>m.resim3)" width="70" height="72" /></a></li>
+            <li><a href="~/@Html.DisplayTextFor(m=>m.resim4)" data-lightbox="~/@Html.DisplayTextFor(m=>m.resim4)" onmouseover="deneme(~/@Html.DisplayTextFor(m=>m.resim4))"><img src="~/@Html.DisplayTextFor(m=>m.resim4)" width="70" height="72" /></a></li>
+        </ul>
+
+        
+    </div>
+    <div class="sekil">
+        <img src="~/images/ayni.png" height="30" /><img src="~/images/kargo.png" height="30" />
+    </div>
+
+</div>
+
+<div class="urunsayfasi2">
+    <div class="ortala">
+        <h1>@Html.DisplayFor(m => m.AnakartAdi)</h1>
+        <p id="p2">@Html.DisplayFor(m => m.Fiyat)₺</p>
+
+        @using (Html.BeginForm("Sepet","Home",FormMethod.Get))
+        {
+        @Html.DropDownListFor(m => m.Marka, AnakartSayisi, new { @class = "form-control" })
+
+        <button type="submit" class="kayitbuton">@Html.Label(Teknomar.Resource.SepeteEkle)</button>
+        }
+
+    </div>
+    <p id="p3"></b></p>
+    <p id="p3"></b></p>
+    <p id="p3"></b></p>
+    <p id="p3"></b></p>
+    <p id="p3">@Html.Label(Teknomar.Resource.Stok)       :<b>@Html.DisplayFor(m => m.Stok)</b></p>
+    <p id="p3">@Html.Label(Teknomar.Resource.MBCipSeti)  :<b> @Html.DisplayFor(m => m.MbChipseti)</b></p>
+    <p id="p3">@Html.Label(Teknomar.Resource.BellekTipi) :<b>@Html.DisplayFor(m => m.RamTipi)</b></p>
+    <a href="#ozellik">@Html.Label(Teknomar.Resource.DahaCokOzellik)</a>
+
+</div>
+
+<div class="altkisim">
+    <div id="TabbedPanels1" class="TabbedPanels">
+        <ul class="TabbedPanelsTabGroup">
+            <li class="TabbedPanelsTab" tabindex="0"><a name="ozellik">@Html.Label(Teknomar.Resource.UrunOzellikleri)</a></li>
+            <li class="TabbedPanelsTab" tabindex="0">@Html.Label(Teknomar.Resource.Yorumlar)</li>
+            <li class="TabbedPanelsTab" tabindex="0">@Html.Label(Teknomar.Resource.OdemeSecenekleri)</li>
+        </ul>
+        <div class="TabbedPanelsContentGroup">
+            <div class="TabbedPanelsContent">
+                <div class="teknikozellik">
+
+                    <table cellspacing="0" align="Center" border="0">
+                        <tr><p id="teknik">@Html.Label(Teknomar.Resource.TeknikOzellikler)</p></tr>
+                        <tr><td id="ilk">@Html.Label(Teknomar.Resource.Yapi)</td><td>@Html.DisplayFor(m => m.Yapi)</td></tr>
+                        <tr><td id="ilk">@Html.Label(Teknomar.Resource.Uyumluluk)</td><td>@Html.DisplayFor(m => m.Uyumluluk)</td></tr>
+                    </table>
+
+                </div>
+
+                <div class="islemciozellik">
+
+                    <table cellspacing="0" align="Center" border="0">
+                        <tr><p id="teknik">@Html.Label(Teknomar.Resource.IslemciOzellikleri)</p></tr>
+                        <tr><td id="ilk">@Html.Label(Teknomar.Resource.IslemciSoketTipi)</td><td>@Html.DisplayFor(m => m.IslemciSoketTipi)</td></tr>
+                    </table>
+
+                </div>
+
+                <div class="ramozellik">
+
+                    <table cellspacing="0" align="Center" border="0">
+                        <tr><p id="teknik">@Html.Label(Teknomar.Resource.BellekOzellikleri)</p></tr>
+                        <tr><td id="ilk">@Html.Label(Teknomar.Resource.BellekTipi)</td><td>@Html.DisplayFor(m => m.RamTipi)</td></tr>
+                    </table>
+                </div>
+
+                <div class="anakartozellik">
+
+                    <table cellspacing="0" align="Center" border="0">
+                        <tr><p id="teknik">@Html.Label(Teknomar.Resource.Anakart)</p></tr>
+                        <tr><td id="ilk">@Html.Label(Teknomar.Resource.MBCipSeti)</td><td>@Html.DisplayFor(m => m.MbChipseti)</td></tr>
+                        <tr><td id="ilk">@Html.Label(Teknomar.Resource.MBBellekSlotSayisi)</td><td>@Html.DisplayFor(m => m.MbRamSlotSayisi)</td></tr>
+                    </table>
+                </div>
+
+                <div class="islemciozellik">
+
+                    <table cellspacing="0" align="Center" border="0">
+                        <tr><p id="teknik">@Html.Label(Teknomar.Resource.GenelOzellikler)</p></tr>
+                        <tr><td id="ilk">@Html.Label(Teknomar.Resource.Mensei)</td><td>@Html.DisplayFor(m => m.Mensei)</td></tr>
+                        <tr><td id="ilk">@Html.Label(Teknomar.Resource.Garanti)</td><td>@Html.DisplayFor(m => m.Garanti)</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="TabbedPanelsContent">
+                <script>
+
+
+                </script>
+                <div class="yorumyapma">
+                    <table class="yorumyapmatablo">
+                        <tr>
+                            <td>
+                                <img src="~/images/yorum_avatar.png" style="width:40px; height:40px;" />
+
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="yorumisim">
+
+                                <asp:Label ID="lblAdSoyad" runat="server" Text="Misafir"></asp:Label>
+
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="yorum">
+                                <input type="text" placeholder="Yorum Başlığı Giriniz" id="txtYorumBasligi" runat="server" /><asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtYorumBasligi" ErrorMessage="Lütfen Yorum Başlığı Giriniz." ForeColor="Red" ValidationGroup="yorumyap"></asp:RequiredFieldValidator>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="yorum">
+                                <input type="text" placeholder="Yorum Giriniz" id="txtYorum" runat="server" /><asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Lütfen Yorum Giriniz." ControlToValidate="txtYorum" ForeColor="Red" ValidationGroup="yorumyap"></asp:RequiredFieldValidator>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="yorumbuton">
+                                <button type="submit" class="kayitbuton">@Html.Label(Teknomar.Resource.YorumYap)</button>
+                            </td>
+
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="TabbedPanelsContent">
+
+                <div id="odemesecenek">
+                    <table class="odemesecenektablo">
+                        <tr>
+                            <td class="odemeresim"><img src="~/images/kargokapi.png" /></td>
+                            <td class="odemebaslik">@Html.Label(Teknomar.Resource.KargoBedava)</td>
+                            <td class="odemeyazi">@Html.Label(Teknomar.Resource.KargoBedava2)</td>
+                        </tr>
+                        <tr>
+                            <td><img src="~/images/kapidaodeme.png" /></td>
+                            <td class="odemebaslik">@Html.Label(Teknomar.Resource.KapidaNakitOdeme)</td>
+                            <td class="odemeyazi">@Html.Label(Teknomar.Resource.KapidaNakitOdeme2)</td>
+                        </tr>
+                        <tr>
+                            <td class="odemeresim2"><img src="~/images/geriiade.png" /></td>
+                            <td class="odemebaslik">@Html.Label(Teknomar.Resource.GunIcindeIade)</td>
+                            <td class="odemeyazi">@Html.Label(Teknomar.Resource.GunIcindeIade2)</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
+    </script>
+
+
+
+
+
+
